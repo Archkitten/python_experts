@@ -15,6 +15,10 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route('/games/')
+def games():
+    return render_template("games.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
