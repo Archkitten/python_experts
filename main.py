@@ -19,6 +19,27 @@ def about():
 def games():
     return render_template("games.html")
 
+@app.route('/aboutAidan/')
+def aboutAidan():
+    return render_template("aboutAidan.html")
+
+@app.route('/aboutArch/')
+def aboutArch():
+    return render_template("aboutArch.html")
+
+@app.route('/aboutDavid/')
+def aboutDavid():
+    return render_template("aboutDavid.html")
+
+@app.route('/aboutTyler/')
+def aboutTyler():
+    return render_template("aboutTyler.html")
+
+@app.route('/aboutWilliam/')
+def aboutWilliam():
+    return render_template("aboutWilliam.html")
+
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
