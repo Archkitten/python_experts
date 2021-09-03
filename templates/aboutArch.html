@@ -108,39 +108,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="/">Playground</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
-                        About Us
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <a class="dropdown-item" href="/aboutAidan">Aidan</a>
-                        <a class="dropdown-item" href="/aboutArch">Arch</a>
-                        <a class="dropdown-item" href="/aboutDavid">David</a>
-                        <a class="dropdown-item" href="/aboutTyler">Tyler</a>
-                        <a class="dropdown-item" href="/aboutWilliam">William</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/games">Games <span class="sr-only"></span></a>
-        </div>
-    </div>
-</nav>
+{% include "layouts/navbar.html" %}
 
 
 <!- Try building a new body here ->
