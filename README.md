@@ -2,6 +2,12 @@
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Idea
 Starter code should be fun and practical.
+Scores:
+
+Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
+About Us: Greeting plus a little about us.
+Games: Where all the games are going to be located
+
 ### Visual thoughts
 #### Organize with Bootstrap menu 
 #### Add some color and fun through VANTA Visuals (birds, halo, solar, net)
