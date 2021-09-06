@@ -59,4 +59,5 @@ https://github.com/Archkitten/python_experts/projects/1
 Tyler: 
 https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing
 
-David: I dont have his work :( 
+David:
+https://docs.google.com/document/d/1xF3iJHqvY4en-WKrrX2Q1lQ-GtWT6P78igyFHzD5F1g/edit#
