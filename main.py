@@ -39,6 +39,10 @@ def aboutTyler():
 def aboutWilliam():
     return render_template("aboutWilliam.html")
 
+@app.route('/minilab/')
+def minilab():
+    return render_template("minilab.html")
+
 
 
 # connects /kangaroos path to render kangaroos.html
