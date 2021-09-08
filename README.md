@@ -1,4 +1,3 @@
----
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
 About Us: Greeting plus a little about us.
