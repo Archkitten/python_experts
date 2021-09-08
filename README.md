@@ -9,24 +9,24 @@ Games: Where all the games are going to be located
 ---------------
 
 
-> Requirements: 
+> Requirements:
 
 Scrum Board (Ideation / Design )
 
-- Scrum Master. 
+- Scrum Master.
 - [x] Define tasks and place assignments to in-progress on the Scrum board.
 
 
-- Designer. 
+- Designer.
 - [x] Wire Frame (at least three theme pages, team mini-labs, and about)
 
 
-- Technical Lead. 
+- Technical Lead.
 - [x] Coordinate brain write session, after preliminary wire frames, make sure you capture technical complexities as an output of this exercise (input, saving data, comments, visual actions, animations, ...)
-GitHub assets
+  GitHub assets
 
 
-- Navigators. 
+- Navigators.
 - [x] Capture or build highlight of Ideation in README.md, this allows ideas to persist with Project,  Make sure that work from Developers works to expectations (testing, suggestions for improvement)
 
 
@@ -48,7 +48,7 @@ Quality and Effort
 | Arch | [Evidence](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/edit?usp=sharing) |
 
 ---
-**Sprint 3,4 week 3** 
+**Sprint 3,4 week 3**
 ---------------
 > Prototyping and Research
 
