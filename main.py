@@ -39,9 +39,9 @@ def aboutTyler():
 def aboutWilliam():
     return render_template("aboutWilliam.html")
 
-@app.route('/minilab/')
-def minilab():
-    return render_template("minilab.html")
+@app.route('/binary/')
+def binary():
+    return render_template("minilab/binary.html")
 
 
 
