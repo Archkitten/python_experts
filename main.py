@@ -43,6 +43,10 @@ def aboutWilliam():
 def binary():
     return render_template("minilab/binary.html")
 
+@app.route('/video0/')
+def video0():
+    return render_template("minilab/video0.html")
+
 
 
 # connects /kangaroos path to render kangaroos.html
