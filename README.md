@@ -12,6 +12,9 @@
 | David | David-Xie123 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ADavid-Xie123) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3ADavid-Xie123) | [Commits](https://github.com/Archkitten/python_experts/commits?author=David-Xie123) | [Profile](http://github.com/David-Xie123) | [David, Tyler](https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing) |
 | Tyler | Tyler929 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ATyler929) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Atyler929) | [Commits](https://github.com/Archkitten/python_experts/commits?author=tyler929) | [Profile](https://github.com/Tyler929) | - |
 
+**Project Information:**
+---------------
+
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
 About Us: Greeting plus a little about us.
