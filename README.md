@@ -10,7 +10,14 @@
 | Arch | Archkitten | [Tasks](https://github.com/Archkitten/group_e/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/group_e/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) |
 | William | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) |
 | David | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/jlaaa) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Ajlaaa) | [Commits](https://github.com/Archkitten/group_e/commits?author=jlaaa) | [Profile](http://github.com/jlaaa) | [Jonathan and Mingze](https://docs.google.com/document/d/1X2jM505mWx0M-c00UsjGHgw-wYwwSOicvXxqSMxgq6E/edit?usp=sharing) |
-| Tyler | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) |
+| Tyler | Tyler929 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aopen+assignee%3A%40me) | [Scrum Board](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+author%3ATyler929+) | [Commits](https://github.com/Archkitten/python_experts/commits?author=tyler929) | [Profile](https://github.com/Tyler929) |
+
+
+### Links
+Proect board: [here](https://github.com/Archkitten/python_experts/projects/1)
+
+Project plan: [here](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit?usp=sharing)
+
 
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
