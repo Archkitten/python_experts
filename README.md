@@ -1,29 +1,55 @@
+**Sprint 3,4 week 3**
+---------------
+> Prototyping and Research
+
+- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
+- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
+- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
+
+
+- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
+- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
+
+
+- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
+
+
+- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
+
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | provide evendence based off requirements |
+| William | provide evendence based off requirements |
+| David | provide evendence based off requirements | 
+| Tyler | provide evendence based off requirements |
+| Arch | provide evendence based off requirements |
+---
+
 ## m224-python_experts
 
 * [Scrumboard](https://github.com/Archkitten/python_experts/projects/1)
 
-* [GitHub repo contributors](https://github.com/Archkitten/python_experts/graphs/contributors)
+* [GitHub Contributor Graphs](https://github.com/Archkitten/python_experts/graphs/contributors)
 
 | Name | Github Name | Tasks | Scrum Board | Commits | Profile | Pair Share Journals |
 | --- | --- | --- | --- | --- | --- | --- |
-| Aidan | name | [Tasks](https://github.com/Archkitten/group_e/issues?q=is%3Aissue+assignee%3Aalgolg+is%3Aclosed) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Aalgolg) | [Commits](https://github.com/Archkitten/group_e/commits?author=algolg) | [Profile](https://github.com/algolg) | [Akhil and Arch](https://docs.google.com/document/d/16bqLX_NVmulQ5aL9OVEMLcY3koXl3cxpHot4T0fy69g/edit#heading=h.1mstvz5p6okc) |
-| Arch | Archkitten | [Tasks](https://github.com/Archkitten/group_e/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/group_e/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) |
-| William | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) |
-| David | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/jlaaa) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Ajlaaa) | [Commits](https://github.com/Archkitten/group_e/commits?author=jlaaa) | [Profile](http://github.com/jlaaa) | [Jonathan and Mingze](https://docs.google.com/document/d/1X2jM505mWx0M-c00UsjGHgw-wYwwSOicvXxqSMxgq6E/edit?usp=sharing) |
-| Tyler | Tyler929 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aopen+assignee%3A%40me) | [Scrum Board](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+author%3ATyler929+) | [Commits](https://github.com/Archkitten/python_experts/commits?author=tyler929) | [Profile](https://github.com/Tyler929) |
+| Aidan | aidanywu | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3Aaidanywu) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Aaidanywu) | [Commits](https://github.com/Archkitten/python_experts/commits?author=aidanywu) | [Profile](https://github.com/aidanywu) | [Aidan, Arch, William](https://docs.google.com/document/d/1yGPJnDJTsHsVj_XPvZL9FYUptwKvOYQwFpZTkwAil4k/edit?usp=sharing) |
+| Arch | Archkitten | [Tasks](https://github.com/Archkitten/group_e/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/python_experts/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) | - |
+| William | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) | - |
+| David | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/jlaaa) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Ajlaaa) | [Commits](https://github.com/Archkitten/group_e/commits?author=jlaaa) | [Profile](http://github.com/jlaaa) | [David, Tyler](https://google.com) |
+| Tyler | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) | - |
 
 
-### Links
-Proect board: [here](https://github.com/Archkitten/python_experts/projects/1)
-
-Project plan: [here](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit?usp=sharing)
-
-
+### Ideation
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
 About Us: Greeting plus a little about us.
 
 Games: Where all the games are going to be located
+
+Website prototype: [Here]()
+
+Website progress: [Here]()
 
 **PBL 1,2:**
 ---------------
@@ -68,28 +94,3 @@ Quality and Effort
 | Arch | [Evidence](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/edit?usp=sharing) |
 
 ---
-**Sprint 3,4 week 3**
----------------
-> Prototyping and Research
-
-- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
-- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
-- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
-
-
-- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
-
-
-- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
-
-
-- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
-
-| Names | Evidence |
-| ----------- | ----------- |
-| Aidan | provide evendence based off requirements |
-| William | provide evendence based off requirements |
-| David | provide evendence based off requirements | 
-| Tyler | provide evendence based off requirements |
-| Arch | provide evendence based off requirements |
