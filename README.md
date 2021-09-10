@@ -27,17 +27,20 @@
 
 ## m224-python_experts
 
-* [Scrumboard](https://github.com/Archkitten/python_experts/projects/1)
+* [Scrum Board](https://github.com/Archkitten/python_experts/projects/1)
 
 * [GitHub Contributor Graphs](https://github.com/Archkitten/python_experts/graphs/contributors)
 
 | Name | Github Name | Tasks | Scrum Board | Commits | Profile | Pair Share Journals |
 | --- | --- | --- | --- | --- | --- | --- |
 | Aidan | aidanywu | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3Aaidanywu) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Aaidanywu) | [Commits](https://github.com/Archkitten/python_experts/commits?author=aidanywu) | [Profile](https://github.com/aidanywu) | [Aidan, Arch, William](https://docs.google.com/document/d/1yGPJnDJTsHsVj_XPvZL9FYUptwKvOYQwFpZTkwAil4k/edit?usp=sharing) |
-| Arch | Archkitten | [Tasks](https://github.com/Archkitten/group_e/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/python_experts/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) | - |
-| William | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) | - |
-| David | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/jlaaa) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Ajlaaa) | [Commits](https://github.com/Archkitten/group_e/commits?author=jlaaa) | [Profile](http://github.com/jlaaa) | [David, Tyler](https://google.com) |
-| Tyler | name | [Tasks](https://github.com/Archkitten/group_e/issues/assigned/TKperson) | [Scrum Board](https://github.com/Archkitten/group_e/projects/1?card_filter_query=assignee%3Atkperson) | [Commits](https://github.com/Archkitten/group_e/commits?author=TKperson) | [Profile](https://github.com/TKperson) | - |
+| Arch | Archkitten | [Tasks](https://github.com/Archkitten/python_experts/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/python_experts/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) | - |
+ William | willcyber | [Tasks](https://github.com/Archkitten/python_experts/issues?q=assignee%3Awillcyber) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Awillcyber) | [Commits](https://github.com/Archkitten/python_experts/commits?author=willcyber) | [Profile](https://github.com/willcyber) |
+| David | David-Xie123 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ADavid-Xie123) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3ADavid-Xie123) | [Commits](https://github.com/Archkitten/python_experts/commits?author=David-Xie123) | [Profile](http://github.com/David-Xie123) | [David, Tyler](https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing) |
+| Tyler | Tyler929 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ATyler929) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Atyler929) | [Commits](https://github.com/Archkitten/python_experts/commits?author=tyler929) | [Profile](https://github.com/Tyler929) | - |
+
+**Project Information:**
+---------------
 
 
 ### Ideation

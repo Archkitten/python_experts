@@ -39,13 +39,17 @@ def aboutTyler():
 def aboutWilliam():
     return render_template("aboutWilliam.html")
 
-@app.route('/binary/')
-def binary():
-    return render_template("minilab/binary.html")
-
 @app.route('/video0/')
 def video0():
     return render_template("minilab/video0.html")
+
+@app.route('/greet/')
+def greet():
+    return render_template("minilab/greet.html")
+
+@app.route('/binary/')
+def binary():
+    return render_template("minilab/binary.html")
 
 
 
