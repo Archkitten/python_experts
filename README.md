@@ -1,6 +1,6 @@
 ## m224-python_experts
 
-* [Scrumboard](https://github.com/Archkitten/python_experts/projects/1)
+* [Scrum Board](https://github.com/Archkitten/python_experts/projects/1)
 
 * [GitHub Contributor Graphs](https://github.com/Archkitten/python_experts/graphs/contributors)
 
