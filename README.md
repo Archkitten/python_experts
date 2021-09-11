@@ -18,8 +18,8 @@
 
 | Names | Evidence |
 | ----------- | ----------- |
-| Aidan | [Inheritence from navbar](https://github.com/Archkitten/python_experts/commit/76d139325fc0be3871659bf120ff6163344c0347) |
-| William | [Ideation](https://github.com/Archkitten/python_experts/commit/adf0014abb4e464bbaf2dc80a51f2f77685cf4ed) |
+| Aidan | [Inheritance from navbar](https://github.com/Archkitten/python_experts/commit/76d139325fc0be3871659bf120ff6163344c0347) |
+| William | [Ideation](https://github.com/Archkitten/python_experts/commit/adf0014abb4e464bbaf2dc80a51f2f77685cf4ed) + [Binary project](https://github.com/Archkitten/python_experts/commit/bf4a9185f944c1b2b7318909cb3ff3c4a65ce635)
 | David | [Git Commit for web design](https://github.com/Archkitten/python_experts/commit/040f6930491dd81a74b44ca352fd2ca5154c85a0) | 
 | Tyler | [Git Commit for Read me](https://github.com/Archkitten/python_experts/commit/d502ee37cea8296a87dd86af81c0972ffb56f88b#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5) |
 | Arch | [Arch + Aidan](https://github.com/Archkitten/python_experts/commit/3042f2b2f59a705880cb60aad28287ecb4edbbe5) + [Greet code](https://github.com/Archkitten/python_experts/commit/99bca377a6fe60495c9f6b41b44bf605df171d02)|
@@ -50,9 +50,9 @@ About Us: Greeting plus a little about us.
 
 Games: Where all the games are going to be located
 
-Website prototype: [https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.gea75123cf8_0_82]()
+Website prototype: [Ideas](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.gea75123cf8_0_82)
 
-Website progress: [http://127.0.0.1:5000/]()
+Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 **PBL 1,2:**
 ---------------
