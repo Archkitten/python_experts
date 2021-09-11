@@ -1,3 +1,30 @@
+**Sprint 3,4 week 3**
+---------------
+> Prototyping and Research
+
+- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
+- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
+- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
+
+
+- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
+- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
+
+
+- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
+
+
+- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
+
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | [Inheritence from navbar](https://github.com/Archkitten/python_experts/commit/76d139325fc0be3871659bf120ff6163344c0347) |
+| William | [not yet added]() |
+| David | [Git Commit for web design](https://github.com/Archkitten/python_experts/commit/040f6930491dd81a74b44ca352fd2ca5154c85a0) | 
+| Tyler | [Git Commit for Read me](https://github.com/Archkitten/python_experts/commit/d502ee37cea8296a87dd86af81c0972ffb56f88b#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5) |
+| Arch | [Arch + Aidan](https://github.com/Archkitten/python_experts/commit/3042f2b2f59a705880cb60aad28287ecb4edbbe5) + [Greet code](https://github.com/Archkitten/python_experts/commit/99bca377a6fe60495c9f6b41b44bf605df171d02)|
+---
+
 ## m224-python_experts
 
 * [Scrum Board](https://github.com/Archkitten/python_experts/projects/1)
@@ -15,11 +42,17 @@
 **Project Information:**
 ---------------
 
+
+### Ideation
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
 About Us: Greeting plus a little about us.
 
 Games: Where all the games are going to be located
+
+Website prototype: [Here]()
+
+Website progress: [Here]()
 
 **PBL 1,2:**
 ---------------
@@ -64,28 +97,3 @@ Quality and Effort
 | Arch | [Evidence](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/edit?usp=sharing) |
 
 ---
-**Sprint 3,4 week 3**
----------------
-> Prototyping and Research
-
-- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
-- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
-- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
-
-
-- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
-
-
-- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
-
-
-- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
-
-| Names | Evidence |
-| ----------- | ----------- |
-| Aidan | provide evendence based off requirements |
-| William | provide evendence based off requirements |
-| David | provide evendence based off requirements | 
-| Tyler | provide evendence based off requirements |
-| Arch | provide evendence based off requirements |
