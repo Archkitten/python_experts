@@ -58,6 +58,14 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 **PBL 1,2:**
 ---------------
 
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | [Evidence](https://docs.google.com/document/d/1Hfj5lmAUTpCRWe_yNsZ8gwa4-_xsiJCL2-EJhQjU4ec/edit?usp=sharing) |
+| William | [Evidence](https://docs.google.com/document/d/1dB3nRMvoKc-11rIvAo-7lykMnfGde53yRo2XQuAwGAo/edit) + [Evidence](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.ged3369d0c1_7_5) |
+| David | [Evidence](https://docs.google.com/document/d/1xF3iJHqvY4en-WKrrX2Q1lQ-GtWT6P78igyFHzD5F1g/edit#) | 
+| Tyler | [Evidence](https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing) + [Evidence](https://github.com/Archkitten/python_experts/projects/1) |
+| Arch | [Evidence](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/edit?usp=sharing) |
+
 
 > Requirements:
 
@@ -89,12 +97,5 @@ Completed Task
 Quality and Effort
 
 
-| Names | Evidence |
-| ----------- | ----------- |
-| Aidan | [Evidence](https://docs.google.com/document/d/1Hfj5lmAUTpCRWe_yNsZ8gwa4-_xsiJCL2-EJhQjU4ec/edit?usp=sharing) |
-| William | [Evidence](https://docs.google.com/document/d/1dB3nRMvoKc-11rIvAo-7lykMnfGde53yRo2XQuAwGAo/edit) + [Evidence](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.ged3369d0c1_7_5) |
-| David | [Evidence](https://docs.google.com/document/d/1xF3iJHqvY4en-WKrrX2Q1lQ-GtWT6P78igyFHzD5F1g/edit#) | 
-| Tyler | [Evidence](https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing) + [Evidence](https://github.com/Archkitten/python_experts/projects/1) |
-| Arch | [Evidence](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/edit?usp=sharing) |
 
 ---
