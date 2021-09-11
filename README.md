@@ -19,7 +19,7 @@
 | Names | Evidence |
 | ----------- | ----------- |
 | Aidan | [Inheritence from navbar](https://github.com/Archkitten/python_experts/commit/76d139325fc0be3871659bf120ff6163344c0347) |
-| William | [not yet added]() |
+| William | [Ideation](https://github.com/Archkitten/python_experts/commit/adf0014abb4e464bbaf2dc80a51f2f77685cf4ed) |
 | David | [Git Commit for web design](https://github.com/Archkitten/python_experts/commit/040f6930491dd81a74b44ca352fd2ca5154c85a0) | 
 | Tyler | [Git Commit for Read me](https://github.com/Archkitten/python_experts/commit/d502ee37cea8296a87dd86af81c0972ffb56f88b#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5) |
 | Arch | [Arch + Aidan](https://github.com/Archkitten/python_experts/commit/3042f2b2f59a705880cb60aad28287ecb4edbbe5) + [Greet code](https://github.com/Archkitten/python_experts/commit/99bca377a6fe60495c9f6b41b44bf605df171d02)|
