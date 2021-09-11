@@ -50,9 +50,9 @@ About Us: Greeting plus a little about us.
 
 Games: Where all the games are going to be located
 
-Website prototype: [Here]()
+Website prototype: [https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.gea75123cf8_0_82]()
 
-Website progress: [Here]()
+Website progress: [http://127.0.0.1:5000/]()
 
 **PBL 1,2:**
 ---------------
