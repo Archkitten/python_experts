@@ -1,20 +1,3 @@
-**Sprint 3,4 week 3**
----------------
-> Prototyping and Research
-
-- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
-- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
-- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
-
-
-- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
-
-
-- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
-
-
-- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
 
 | Names | Evidence |
 | ----------- | ----------- |
@@ -53,6 +36,25 @@ Games: Where all the games are going to be located
 Website prototype: [Ideas](https://docs.google.com/presentation/d/1eqZ7LM41xWljfpzlHo48bkBlsybnzl5qE66Ltlr5jT0/edit#slide=id.gea75123cf8_0_82)
 
 Website progress: run code then go to [here](http://127.0.0.1:5000/)
+
+**Sprint 3,4 week 3**
+---------------
+> Prototyping and Research
+
+- Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
+- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
+- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
+
+
+- Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
+- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
+
+
+- Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
+
+
+- Individual Research.   [Learn about binary](https://apclassroom.collegeboard.org/103/home?unit=2)  (Links to an external site.)this week through TPT and TT.  Also, review related videos on CB and Harvard Video.  Update journal, be ready to work on Binary lab next week.
+
 
 **PBL 1,2:**
 ---------------
