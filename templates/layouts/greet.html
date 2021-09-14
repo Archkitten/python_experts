@@ -1,12 +1,15 @@
 <div class="contact" style="height: 35vh;">
     <div class="row justify-content-left" style="margin: 2%;">
-        <form action="" method="GET" id="greetForm">
-            <div>
-                <label for="greetField">Type a greeting name?</label>
-                <input name="name" id="greetField">
-                <button>Greetings!</button>
-                <p text="'Greetings, ' + ${name} + '!'"></p>
-            </div>
-        </form>
+        <div class="col-12">
+            <p>Hello, World!</p>
+        </div>
+
+        <div class="col-12">
+            <form action="/greet" id="greet" method="POST" >
+                <label for="name">Type a greeting name?</label>
+                <input name="name" id="name">
+                <input type="submit" value="Greetings!">
+            </form>
+        </div>
     </div>
 </div>
