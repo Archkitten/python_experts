@@ -1,3 +1,36 @@
+## **Sprint 3,4 week 4**
+
+**Theme:  Prototyping and exploring code and technicals.  Code must be committed and pushed by each Individual
+Planning Requirement**
+
+> Requirements
+- Scrum Master.  
+- [ ] Continue planning best practice, be prepared for review during class on Wednesday, for points.
+
+
+- Developers.  
+- [ ] Ensure each person has Prototype and/or TT3 hack coding task.  TT3 Binary Math must be included in project with all "Hack" suggestions.  Duplicating a Hack task for multiple individuals and integrating into their personal page(s), would be wise for someone who is behind on code commits. **Everyone** needs code commits.
+
+
+- Designer.  
+- [ ] Ensure there is a Design or Research asset for prototyping work.
+
+
+- Navigator/Tester.
+- [ ] Build a video showing design and runtime of prototype(s).
+
+
+- Groomers/Developers.  
+- [ ] Groom Scrum Board before delivery, moving Issues to Review, and including Tangible Assets. Time boxed README entries that point to Issues!
+
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | [Evidence]() |
+| William | [Evidence]() |
+| David | [Evidence]() | 
+| Tyler | [Evidence]() |
+| Arch | [Evidence]() |
+---
 ## m224-python_experts
 
 * [Scrum Board](https://github.com/Archkitten/python_experts/projects/1)
