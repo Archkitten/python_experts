@@ -1,36 +1,3 @@
-## **Sprint 3,4 week 4**
-
-**Theme:  Prototyping and exploring code and technicals.  Code must be committed and pushed by each Individual
-Planning Requirement**
-
-> Requirements
-- Scrum Master.  
-- [ ] Continue planning best practice, be prepared for review during class on Wednesday, for points.
-
-
-- Developers.  
-- [ ] Ensure each person has Prototype and/or TT3 hack coding task.  TT3 Binary Math must be included in project with all "Hack" suggestions.  Duplicating a Hack task for multiple individuals and integrating into their personal page(s), would be wise for someone who is behind on code commits. **Everyone** needs code commits.
-
-
-- Designer.  
-- [ ] Ensure there is a Design or Research asset for prototyping work.
-
-
-- Navigator/Tester.
-- [ ] Build a video showing design and runtime of prototype(s).
-
-
-- Groomers/Developers.  
-- [ ] Groom Scrum Board before delivery, moving Issues to Review, and including Tangible Assets. Time boxed README entries that point to Issues!
-
-| Names | Evidence |
-| ----------- | ----------- |
-| Aidan | [Evidence]() |
-| William | [Evidence]() |
-| David | [Evidence]() | 
-| Tyler | [Evidence]() |
-| Arch | [Evidence]() |
----
 ## m224-python_experts
 
 * [Scrum Board](https://github.com/Archkitten/python_experts/projects/1)
@@ -60,6 +27,42 @@ Website prototype: [Ideas](https://docs.google.com/presentation/d/1eqZ7LM41xWljf
 
 Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
+---
+
+## **Sprint 3,4 week 4**
+
+**Theme:  Prototyping and exploring code and technicals.  Code must be committed and pushed by each Individual
+Planning Requirement**
+
+> Requirements
+- Scrum Master.
+- [ ] Continue planning best practice, be prepared for review during class on Wednesday, for points.
+
+
+- Developers.
+- [ ] Ensure each person has Prototype and/or TT3 hack coding task.  TT3 Binary Math must be included in project with all "Hack" suggestions.  Duplicating a Hack task for multiple individuals and integrating into their personal page(s), would be wise for someone who is behind on code commits. **Everyone** needs code commits.
+
+
+- Designer.
+- [ ] Ensure there is a Design or Research asset for prototyping work.
+
+
+- Navigator/Tester.
+- [ ] Build a video showing design and runtime of prototype(s).
+
+
+- Groomers/Developers.
+- [ ] Groom Scrum Board before delivery, moving Issues to Review, and including Tangible Assets. Time boxed README entries that point to Issues!
+
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | [Evidence]() |
+| William | [Evidence]() |
+| David | [Evidence]() | 
+| Tyler | [Evidence of Planning](https://github.com/Archkitten/python_experts/commit/f1859f221ccf89c093a67c0c2a2017175433ed23) |
+| Arch | [Evidence]() |
+
+---
 **Sprint 3,4 week 3**
 ---------------
 | Names | Evidence |
@@ -74,12 +77,12 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 > Prototyping and Research
 
 - Team Designer/Coder pair.  Prototype layout.  Get your own STYLE, COLORS, FONTS; get your basic groove into your site.  Create these elements.  This should be consider CSS or <"style"> for your site.
-- [ ] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
-- [ ] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
+- [x] [W3 Schools](https://www.w3schools.com/w3css/defaulT.asp) can provide guidance on CSS..
+- [x] Experiment with Two themes...  Try a couple of prototype experiments and get feedback from Crossover.
 
 
 - Team Designer/Coder pair.  Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-- [ ] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
+- [x] [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/) layout is a suggested technical option.
 
 
 - Individual Coding.   Review and update you home pages again.  Make sure you have a wireframe that can be linked to from your home page that shows design.  Review embedding and design concept [here](https://padlet.com/jmortensen7/embedding)
