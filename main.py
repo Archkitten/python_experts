@@ -19,43 +19,69 @@ def about():
 def games():
     return render_template("games.html")
 
-@app.route('/aboutAidan/')
+@app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
-    return render_template("aboutAidan.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("aboutAidan.html", name=name)
+    # starting and empty input default
+    return render_template("aboutAidan.html", name="World")
 
-@app.route('/aboutArch/')
+@app.route('/aboutArch/', methods=['GET', 'POST'])
 def aboutArch():
-    return render_template("aboutArch.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("aboutArch.html", name=name)
+    # starting and empty input default
+    return render_template("aboutArch.html", name="World")
 
-@app.route('/aboutDavid/')
+@app.route('/aboutDavid/', methods=['GET', 'POST'])
 def aboutDavid():
-    return render_template("aboutDavid.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("aboutDavid.html", name=name)
+    # starting and empty input default
+    return render_template("aboutDavid.html", name="World")
 
-@app.route('/aboutTyler/')
+@app.route('/aboutTyler/', methods=['GET', 'POST'])
 def aboutTyler():
-    return render_template("aboutTyler.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("aboutTyler.html", name=name)
+    # starting and empty input default
+    return render_template("aboutTyler.html", name="World")
 
-@app.route('/aboutWilliam/')
+@app.route('/aboutWilliam/', methods=['GET', 'POST'])
 def aboutWilliam():
-    return render_template("aboutWilliam.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("aboutWilliam.html", name=name)
+    # starting and empty input default
+    return render_template("aboutWilliam.html", name="World")
 
 @app.route('/video0/')
 def video0():
     return render_template("minilab/video0.html")
 
-@app.route('/greet/')
-def greet():
-    return render_template("minilab/greet.html")
-
 @app.route('/greet/', methods=['GET', 'POST'])
-def greet1():
+def greet():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
             return render_template("/minilab/greet.html", name=name)
-    # starting and empty input default
-    return render_template("/minilab/greet.html", name="World")
+    return render_template("minilab/greet.html", name="World")
+
 
 @app.route('/binary/')
 def binary():
