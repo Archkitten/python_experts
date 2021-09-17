@@ -83,9 +83,15 @@ def greet():
     return render_template("minilab/greet.html", name="World")
 
 
-@app.route('/binary/')
+@app.route('/binary/', methods=['GET', 'POST'])
 def binary():
-    return render_template("minilab/binary.html")
+    # submit button has been pushed
+    if request.form:
+        bits = request.form.get("BITS")
+        if len(bits) != 0:  # input field has content
+            return render_template("minilab/binary.html", BITS=bits, MAX=((2 ** int(bits)) - 1))
+    # starting and empty input default
+    return render_template("minilab/binary.html", BITS=8, MAX=255)
 
 
 
