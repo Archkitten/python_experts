@@ -39,7 +39,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <input type="submit" value="Submit">
 </form>
 <p>Current number of bits: {{ BITS }}</p>
-{% set BITS = BITS %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
