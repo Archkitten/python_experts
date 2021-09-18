@@ -33,12 +33,23 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
-<form action="" id="binaries" method="POST" >
-    <label for="BITS">Number of Bits: </label>
-    <input type="number" name="BITS" id="BITS">
-    <input type="submit" value="Submit">
-</form>
-<p>Current number of bits: {{ BITS }}</p>
+<b>
+    <div class="contact" style="height: 17.5vh;">
+        <div class="row justify-content-left" style="margin: 2%;">
+            <div class="col-12">
+                <form action="" id="binaries" method="POST" >
+                    <label for="BITS">Number of Bits: </label>
+                    <input type="number" name="BITS" id="BITS">
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="col-12">
+                    <br>
+                    <p>Current number of bits: {{ BITS }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</b>
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
