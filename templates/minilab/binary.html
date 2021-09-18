@@ -34,18 +34,25 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default-->
 <b>
-    <div class="contact" style="height: 17.5vh;">
+    <div class="contact" style="height: 50vh;">
         <div class="row justify-content-left" style="margin: 2%;">
             <div class="col-12">
                 <form action="" id="binaries" method="POST" >
                     <label for="BITS">Number of Bits: </label>
                     <input type="number" name="BITS" id="BITS">
+                    <div class="col-12">
+                        <br>
+                        <p>Current number of bits: {{ BITS }}</p>
+                    </div>
+                    <p>Choose a light bulb option: </p>
+                    <input type="radio" name="BULB" id="BULB1" value="BULB1">
+                    <label for="BULB1"><img src="/static/assets/bulb_on.jpg" height="50"></label>
+                    <br><br>
+                    <input type="radio" name="BULB" id="BULB2" value="BULB2">
+                    <label for="BULB2"><img src="/static/assets/bulb_on1.jpg" height="50" ></label>
+                    <br><br>
                     <input type="submit" value="Submit">
                 </form>
-                <div class="col-12">
-                    <br>
-                    <p>Current number of bits: {{ BITS }}</p>
-                </div>
             </div>
         </div>
     </div>
@@ -55,8 +62,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/bulb_on.jpg" %}
-{% set imgBulbOff = "/static/assets/bulb_off.png" %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
 
