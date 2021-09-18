@@ -116,7 +116,7 @@ def binary():
                                        imgBulbOff="/static/assets/bulb_off1.jpg",
                                        BITS=8)
             return render_template("minilab/binary.html",
-                                   BITS=int(bits),
+                                   BITS=8,
                                    imgBulbOn="/static/assets/bulb_on.jpg",
                                    imgBulbOff="/static/assets/bulb_off.png")
     # starting and empty input default
