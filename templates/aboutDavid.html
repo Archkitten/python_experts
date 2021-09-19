@@ -1,6 +1,6 @@
 <!-- Extending the predefined project layout -->
 <!-- Custom file for standardizing Project Data
-This HTML is setup as as a Jinja2 layout, coders use layouts for:
+This HTML is set up as a Jinja2 layout, coders use layouts for:
  ... standardization of style
  ... setting expectations for data
  ... code reuse
@@ -28,8 +28,11 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 
 <!- Try building a new body here ->
 <h1><strong>David Xie</strong></h1>
-<p>Hello, user! David is a junior in Computer Science Principles who enjoys coding to help others as well as for entertainment. </p>
+<p>Hello, user! David is a junior in Computer Science Principles class who enjoys coding to help others as well as for entertainment. </p>
 {% include "layouts/greet.html" %}
+<div style="text-align: center;">
+<img src="/static/assets/IMG-6667.JPG" alt="David Xie" width="350" height="500" style="float:none">
+</div>
 
 </body>
 
@@ -37,4 +40,4 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 
 
 </html>
-<img src="/static/assets/IMG-6667.JPG" alt="David Xie" width="350" height="500">
+
