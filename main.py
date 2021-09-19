@@ -88,10 +88,42 @@ def binary():
     # submit button has been pushed
     if request.form:
         bits = request.form.get("BITS")
+        bulb = request.form.get("BULB")
         if len(bits) != 0:  # input field has content
-            return render_template("minilab/binary.html", BITS=bits, MAX=((2 ** int(bits)) - 1))
+            if bulb == "BULB1":
+                return render_template("minilab/binary.html",
+                                       imgBulbOn="/static/assets/bulb_on.jpg",
+                                       imgBulbOff="/static/assets/bulb_off.png",
+                                       BITS=int(bits))
+            if bulb == "BULB2":
+                return render_template("minilab/binary.html",
+                                       imgBulbOn="/static/assets/bulb_on1.jpg",
+                                       imgBulbOff="/static/assets/bulb_off1.jpg",
+                                       BITS=int(bits))
+            return render_template("minilab/binary.html",
+                                   BITS=int(bits),
+                                   imgBulbOn="/static/assets/bulb_on.jpg",
+                                   imgBulbOff="/static/assets/bulb_off.png")
+        if len(bits) == 0:
+            if bulb == "BULB1":
+                return render_template("minilab/binary.html",
+                                       imgBulbOn="/static/assets/bulb_on.jpg",
+                                       imgBulbOff="/static/assets/bulb_off.png",
+                                       BITS=8)
+            if bulb == "BULB2":
+                return render_template("minilab/binary.html",
+                                       imgBulbOn="/static/assets/bulb_on1.jpg",
+                                       imgBulbOff="/static/assets/bulb_off1.jpg",
+                                       BITS=8)
+            return render_template("minilab/binary.html",
+                                   BITS=8,
+                                   imgBulbOn="/static/assets/bulb_on.jpg",
+                                   imgBulbOff="/static/assets/bulb_off.png")
     # starting and empty input default
-    return render_template("minilab/binary.html", BITS=8, MAX=255)
+    return render_template("minilab/binary.html",
+                           BITS=8,
+                           imgBulbOn="/static/assets/bulb_on.jpg",
+                           imgBulbOff="/static/assets/bulb_off.png")
 
 
 
