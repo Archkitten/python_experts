@@ -29,6 +29,31 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
+## **Sprint 5,6 week 5**
+**Theme: Every Scrum Team needs to integrate "RGB Values with an Image" their project.**
+
+> Requirements
+- [ ] RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
+
+- [ ] RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
+
+- [ ] RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
+
+- [ ] RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
+
+- [ ] Research/Study sheet/journal.  what is base2, base8, base16.  what is base64?   How is base64 different? what are some ideas from this research that you can use in your PBL project?  Add backlog items.
+
+- ### **Complete TPT Activities**
+- [ ] Scrum/Pair activity.  Listen to OO's and TO's introduction.  Write about OOs' and TOs roles in your journal.  Brainstorm on how you think fellow student can help you in Test Prep.  Review idea with Scrum Team, then review again with Crossover team.  Each Scrum Team create summary and provide ideas to OO's.
+  
+- Scrum/Pair activity and journal. Unit 3.1 work.   Follow instructions and guidance from OO's
+  
+- Scrum/Pair activity and journal. Unit 3.2 work.   Follow instructions and guidance from OO's
+
+| Evidence | |
+| ------- |----|
+
+---
 ## **Sprint 3,4 week 4**
 
 **Theme:  Prototyping and exploring code and technicals.  Code must be committed and pushed by each Individual
@@ -36,23 +61,23 @@ Planning Requirement**
 
 > Requirements
 - Scrum Master.
-- [ ] Continue planning best practice, be prepared for review during class on Wednesday, for points.
+- [x] Continue planning best practice, be prepared for review during class on Wednesday, for points.
 
 
 - Developers.
-- [ ] Ensure each person has Prototype and/or TT3 hack coding task.  TT3 Binary Math must be included in project with all "Hack" suggestions.  Duplicating a Hack task for multiple individuals and integrating into their personal page(s), would be wise for someone who is behind on code commits. **Everyone** needs code commits.
+- [x] Ensure each person has Prototype and/or TT3 hack coding task.  TT3 Binary Math must be included in project with all "Hack" suggestions.  Duplicating a Hack task for multiple individuals and integrating into their personal page(s), would be wise for someone who is behind on code commits. **Everyone** needs code commits.
 
 
 - Designer.
-- [ ] Ensure there is a Design or Research asset for prototyping work.
+- [x] Ensure there is a Design or Research asset for prototyping work.
 
 
 - Navigator/Tester.
-- [ ] Build a video showing design and runtime of prototype(s).
+- [x] Build a video showing design and runtime of prototype(s).
 
 
 - Groomers/Developers.
-- [ ] Groom Scrum Board before delivery, moving Issues to Review, and including Tangible Assets. Time boxed README entries that point to Issues!
+- [x] Groom Scrum Board before delivery, moving Issues to Review, and including Tangible Assets. Time boxed README entries that point to Issues!
 
 | Names | Evidence |
 | ----------- | ----------- |
