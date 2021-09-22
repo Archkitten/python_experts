@@ -33,9 +33,9 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 **Theme: Every Scrum Team needs to integrate "RGB Values with an Image" their project.**
 
 > Requirements
-- [ ] RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
+- [ ] **ARCH + AIDAN** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
 
-- [ ] RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
+- [ ] ** RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
 
 - [ ] RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
 
@@ -50,8 +50,13 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
   
 - Scrum/Pair activity and journal. Unit 3.2 work.   Follow instructions and guidance from OO's
 
-| Evidence | |
-| ------- |----|
+| Names | Evidence |
+| ----------- | ----------- |
+| Aidan | [Evidence]() |
+| William | [Evidence]() |
+| David | [Evidence]() | 
+| Tyler | [Scrum Master Evidence (Planning) ]() + [Scrum Board]() + [TPT Evidemce]() + [Journal Notes]() |
+| Arch | [Evidence]() |
 
 ---
 ## **Sprint 3,4 week 4**
