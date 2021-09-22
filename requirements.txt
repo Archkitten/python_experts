@@ -7,4 +7,4 @@ flask_sqlalchemy
 flask_migrate
 flask_restful
 numpy
-Pillow~=8.2.0
+Pillow~=8.3.2
