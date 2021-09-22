@@ -13,22 +13,26 @@ print(var4, ": Double")
 
 list1 = [5, 3, 4, 1, 2]
 list2 = list1
-# def orderList (list):
-# ?
+def orderList(list):
+    if len(list) <= 1:
+        return list
+    for i in range(len(list)):
+        list[i] = i + 1
+    return list
 # I WOULD USE list2.sort() BUT I'M APPARENTLY NOT ALLOWED TO AAAAAAAAA
 # I WOULD ALSO SORT IT MANUALLY bUt THatS CHeaTiNg!!11!!!!1!
+list2 = orderList(list1)
 print(list2)
 
 # Challenge 3: Find a way to add 3 to each element in the array. Then, take the average of the array and put it into the variable avg. +0.2 if you can turn this into a function and display it on your website.
 
-averageList = [23, 41, 90, 55, 71, 83]
-# def averageList (list):
-# ?
-averageList[0] += 3
-averageList[1] += 3
-averageList[2] += 3
-averageList[3] += 3
-averageList[4] += 3
-averageList[5] += 3
-avg = (averageList[0] + averageList[1] + averageList[2] + averageList[3] + averageList[4] + averageList[5]) / 6
+avgList = [23, 41, 90, 55, 71, 83]
+def averageList(list):
+    if len(list) <= 1:
+        return list
+    for i in range(len(list)):
+        list[i] += 3
+    return list
+avgList = averageList(avgList)
+avg = (avgList[0] + avgList[1] + avgList[2] + avgList[3] + avgList[4] + avgList[5]) / 6
 print(avg)
