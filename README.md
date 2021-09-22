@@ -56,7 +56,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | William | [Evidence]() |
 | David | [Evidence]() | 
 | Tyler | [Scrum Master Evidence (Planning) ]() + [Scrum Board]() + [TPT Evidemce]() + [Journal Notes]() |
-| Arch | [3x3 Grid and Image Embeds](f778d033c04ac920bba7f4066d090de4365e34c5) |
+| Arch | [3x3 Grid and Image Embeds](https://github.com/Archkitten/python_experts/commit/f778d033c04ac920bba7f4066d090de4365e34c5) |
 
 ---
 ## **Sprint 3,4 week 4**
