@@ -131,6 +131,8 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             // Binary numbers
             const binary = getBits();
             setConversions(binary);
+
+            bgColor();
         }
         // add is positive integer, subtract is negative integer
         function add(n) {
@@ -158,6 +160,10 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
                 }
             }
+            bgColor();
+        }
+        function bgColor() {
+            document.body.style.backgroundColor = "#" + document.getElementById('topTable').rows[1].cells[3].innerHTML;
         }
     </script>
 {% endblock %}
