@@ -7,23 +7,18 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 -->
 <!DOCTYPE HTML>
 <html lang="en">
-
+{% include "layouts/base.html" %}
 
 
 
 
 
 <head>
-    {% include "layouts/defaultbackground.html" %}
     <title>Playground | Home </title>
 
 </head>
 
 <body>
-<!-- Navigation Bar from bootstrap
-This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
--->
-{% include "layouts/navbar.html" %}
 
 
 <!- Try building a new body here ->
