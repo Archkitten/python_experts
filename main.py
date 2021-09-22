@@ -1,6 +1,6 @@
 # import "packages" from flask
-from flask import Flask, render_template, request, Blueprint
-from algorithm.image import image_data
+from flask import Flask, render_template, request
+from image import image_data
 # create a Flask instance
 app = Flask(__name__)
 
@@ -148,7 +148,7 @@ def hawkers():
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
-    return render_template('rgb.html', images=image_data())
+    return render_template('minilab/rgb.html', images=image_data())
 
 
 
