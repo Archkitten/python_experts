@@ -55,8 +55,8 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Aidan | [Evidence]() |
 | William | [Evidence]() |
 | David | [Evidence]() | 
-| Tyler | [Scrum Master Evidence (Planning) ]() + [Scrum Board]() + [TPT Evidemce]() + [Journal Notes]() |
-| Arch | [Evidence]() |
+| Tyler | [Scrum Master Evidence (Planning) ](https://github.com/Archkitten/python_experts/commit/516c9b3818f65fb2dd50e9246e5e83a6299db456) + [Scrum Board]() + [TPT Evidemce](https://github.com/Archkitten/python_experts/commit/d5e8365f59ea2d06ab8d96e192158e92ed9e54b8) + [Journal Notes]() |
+| Arch | [Placeholder](https://google.com) |
 
 ---
 ## **Sprint 3,4 week 4**
@@ -90,7 +90,7 @@ Planning Requirement**
 | William | [Evidence]() |
 | David | [Evidence]() | 
 | Tyler | [Evidence of Planning](https://github.com/Archkitten/python_experts/commit/f1859f221ccf89c093a67c0c2a2017175433ed23) |
-| Arch | [Evidence]() |
+| Arch | [3x3 Grid and Image Embeds](https://github.com/Archkitten/python_experts/commit/f778d033c04ac920bba7f4066d090de4365e34c5) |
 
 ---
 **Sprint 3,4 week 3**
