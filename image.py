@@ -33,6 +33,8 @@ def image_data(path=Path("static/img/"), img_list=None):  # path of static image
     for img_dict in img_list:
         # path for HTML access (frontend)
         file = path / img_dict['file']  # file with path for local access (backend)
+        #file = path + img_dict['file']  # file with path for local access (backend)
+
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
@@ -69,7 +71,7 @@ def image_data(path=Path("static/img/"), img_list=None):  # path of static image
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
-    local_path = "../static/img/"
+    local_path = "./static/img/"
     img_test = [
         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
     ]
