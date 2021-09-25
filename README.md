@@ -53,7 +53,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Names | Evidence |
 | ----------- | ----------- |
 | Aidan | [Evidence]() |
-| William | [Evidence]() |
+| William | [Evidence](https://docs.google.com/document/d/1dB3nRMvoKc-11rIvAo-7lykMnfGde53yRo2XQuAwGAo/edit) + [Base Research](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) |
 | David | [Evidence]() | 
 | Tyler | [Scrum Master Evidence (Planning) ](https://github.com/Archkitten/python_experts/commit/516c9b3818f65fb2dd50e9246e5e83a6299db456) + [Scrum Board]() + [TPT Evidemce](https://github.com/Archkitten/python_experts/commit/d5e8365f59ea2d06ab8d96e192158e92ed9e54b8) + [Journal Notes]() |
 | Arch | [Placeholder](https://google.com) |
