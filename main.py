@@ -150,7 +150,8 @@ def hawkers():
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "img"
-    return render_template('minilab/rgb.html', images=image_data(path))
+    web = True
+    return render_template('minilab/rgb.html', images=image_data(path,None,web))
 
 
 

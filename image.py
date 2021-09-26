@@ -18,7 +18,7 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path=Path("static/img/"), img_list=None):  # path of static images is defaulted
+def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
@@ -32,8 +32,10 @@ def image_data(path=Path("static/img/"), img_list=None):  # path of static image
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         # path for HTML access (frontend)
-        file = path / img_dict['file']  # file with path for local access (backend)
-        #file = path + img_dict['file']  # file with path for local access (backend)
+        if(web):
+           file = path / img_dict['file']  # file with path for local access (backend)
+        else:
+            file = path + img_dict['file']  # file with path for local access (backend)
 
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
@@ -75,7 +77,8 @@ if __name__ == "__main__":
     img_test = [
         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
     ]
-    items = image_data(local_path, img_test)  # path of local run
+    web = False
+    items = image_data(local_path, img_test, web)  # path of local run
     for row in items:
         # print some details about the image so you can validate that it looks like it is working
         # meta data
