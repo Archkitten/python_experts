@@ -34,11 +34,11 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Tyler Hickman | View/Backend RGB Values<br> Scrum Board + Read Me<br> Research Base 2, 8, 16, 64. | Ticket<br>Ticket<br>[Ticket](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) | 3/3<br>-/1<br>-/2 |
-| William Wu | View/Backend RGB Values<br> New Model Improvements<br> Research Base 2, 8, 16, 64.| Ticket<br>Ticket<br>[Ticket](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) | 3/3<br>-/1<br>-/2 |
-| Aidan Wu | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
-| David Xie | Research Base 2, 8, 16, 64.<br>View/Backend RGB Values<br> New Model Improvements | [Ticket](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) <br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
-| Arch Huang | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
+| Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/26) <br>[Ticket](https://github.com/Archkitten/python_experts/issues/28) | 3/3<br>-/1<br>-/2 |
+| William Wu | Message Into Image<br>  Research Base 2, 8, 16, 64.  | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) | 3/3<br>-/1<br>-/2 |
+| Aidan Wu | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) | 3/3<br>-/1<br>-/2 |
+| David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image  | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) | 3/3<br>-/1<br>-/2 |
+| Arch Huang | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) | 3/3<br>-/1<br>-/2 |
 
 
 ---
