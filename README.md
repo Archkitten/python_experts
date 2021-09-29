@@ -29,16 +29,16 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
-##Sprint 5,6 week 6
+## Sprint 5,6 week 6
 
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Tyler Hickman | View/Backend RGB Values<br> Scrum Board + Read Me<br> Research Base 2, 8, 16, 64. | Ticket<br>Ticket<br>Ticket | -/3<br>-/1<br>-/2 |
-| William Wu | View/Backend RGB Values<br> New Model Improvements<br> Research Base 2, 8, 16, 64.| Ticket<br>Ticket<br>Ticket | -/3<br>-/1<br>-/2 |
-| Aidan Wu | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | -/3<br>-/1<br>-/2 |
-| David Xie | Research Base 2, 8, 16, 64.<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | -/3<br>-/1<br>-/2 |
-| Arch Huang | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | -/3<br>-/1<br>-/2 |
+| Tyler Hickman | View/Backend RGB Values<br> Scrum Board + Read Me<br> Research Base 2, 8, 16, 64. | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
+| William Wu | View/Backend RGB Values<br> New Model Improvements<br> Research Base 2, 8, 16, 64.| Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
+| Aidan Wu | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
+| David Xie | Research Base 2, 8, 16, 64.<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
+| Arch Huang | View/Frontend RGB Values<br>View/Backend RGB Values<br> New Model Improvements | Ticket<br>Ticket<br>Ticket | 3/3<br>-/1<br>-/2 |
 
 
 ---
