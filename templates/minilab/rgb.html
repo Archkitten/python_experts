@@ -7,6 +7,12 @@
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
+        $("#GFG_UP").text("Click on button to change the src of image");
+        $('button').on('click', function(e) {
+            $('#img').prop('src',
+                'https://media.geeksforgeeks.org/wp-content/uploads/20190529122826/bs11.png');
+            $("#GFG_DOWN").text("src attribute changed");
+        });
     </script>
     <title>RGB starter</title>
 {% endblock %}
@@ -75,6 +81,5 @@
                 </tbody>
             </table>
 
-        </div>
     </div>
 {% endblock %}
