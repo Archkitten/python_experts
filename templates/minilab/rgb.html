@@ -12,8 +12,8 @@
         up.innerHTML = "Click on button to change the src of image";
         var down = document.getElementById('GFG_DOWN');
 
-        function GFG_Fun() {
-            document.getElementById("img<n>").src = document.getElementID("img_gray<n>").innerHTML;
+        function GrayScale() {
+            document.getElementById("img").src =
                 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122826/bs11.png';
             down.innerHTML = "src attribute changed";
         }
@@ -52,7 +52,7 @@
                                {{image.base64}}  original image
                                {{image.base64_GRAY}}  gray scale image
                             -->
-                            <button onclick = "GFG_Fun()">
+                            <button onclick = "GrayScale()">
                                 Grayscale
                             </button>
 
