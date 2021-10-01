@@ -12,10 +12,16 @@
         up.innerHTML = "Click on button to change the src of image";
         var down = document.getElementById('GFG_DOWN');
 
-        function GFG_Fun() {
-            document.getElementById("img<n>").src = document.getElementID("img_gray<n>").innerHTML;
-                'https://media.geeksforgeeks.org/wp-content/uploads/20190529122826/bs11.png';
-            down.innerHTML = "src attribute changed";
+        function changeImage(ndx) {
+            if (document.getElementById("button" + ndx).value == "Grayscale") {
+                document.getElementById("img" + ndx).src = document.getElementById("img_gray" + ndx).innerHTML;
+                document.getElementById("button" + ndx).value = "Original";
+            }
+            else
+            {
+                document.getElementById("button" + ndx).value = "Grayscale";
+                document.getElementById("img" + ndx).src = document.getElementById("img_orig" + ndx).innerHTML;
+            }
         }
 
     </script>
@@ -47,17 +53,14 @@
                         <td>
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
 
-                            <!-- Hack: create button (btn{{loop.index}} to  call java script function
+                            <!-- Hack: create button (btn{{loop.index}} to call java script function
                                pass index to allow you to toggle images with hidden id's
                                {{image.base64}}  original image
                                {{image.base64_GRAY}}  gray scale image
                             -->
-                            <button onclick = "GFG_Fun()">
-                                Grayscale
-                            </button>
-
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                            <input type="button" id="button{{loop.index}}" value="Grayscale" onclick="changeImage({{loop.index}})">
                         </td>
                         <td>
                             <div class="overflow-auto" style="height: 256px">
@@ -90,6 +93,6 @@
                 {% endfor %}
                 </tbody>
             </table>
-
+        </div>
     </div>
 {% endblock %}
