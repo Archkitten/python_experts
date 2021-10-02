@@ -23,7 +23,7 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
         img_list = [
             {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
             {'source': "Unsplash", 'label': "Lake Mountain View", 'file': "lake-bridge.jpg"},
-            {'source': "InnerSloth LLC", 'label': "Among Us", 'file': "among_s.jpg"},
+            {'source': "InnerSloth LLC", 'label': "Among Us", 'file': "among_us.png"},
             {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
             {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
             {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
