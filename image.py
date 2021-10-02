@@ -24,12 +24,20 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
             {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
             {'source': "Unsplash", 'label': "Lake Mountain View", 'file': "lake-bridge.jpg"},
             {'source': "InnerSloth LLC", 'label': "Among Us", 'file': "among_us.png"},
-            {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
-            {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"}
+            # {'source': "The Verge", 'label': "Moon&Astronaut", 'file': "2020622b_herox_lunar_loo2.0.jpg"},
+            {'source': "NASA, ESA/Hubble and the Hubble Heritage Team", 'label': "Space", 'file': "ASYGI0415_1.jpg"},
+            {'source': "Pixels Info", 'label': "Bottle", 'file': "shipinbottle.jpg"},
+            # {'source': "Matt Burgess", 'label': "Water Painting", 'file': "watersplash.jpg"},
+            {'source': "BEAUTYSCENERY", 'label': "Trees and Mountains", 'file': "trees_mountains_water.jpg"},
+            # {'source': "GettyImages", 'label': "Cherry Blossoms", 'file': "japancherryblossoms.jpg"},
+            # {'source': "Pixabay", 'label': "Fall Aesthetic", 'file': "pexels-photo-358238.jpg"},
+            # {'source': "Pixabay", 'label': "Tree", 'file': "tree-736885__340.jpg"},
+            # {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
+            # {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
+            # {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
+            # {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
+            # {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
+            # {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
