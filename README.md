@@ -35,9 +35,9 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/26) <br>[Ticket](https://github.com/Archkitten/python_experts/issues/28) | Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| William Wu | Message Into Image<br>  Research Base 2, 8, 16, 64.  | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| William Wu | Message Into Image <br>  Research Base 2, 8, 16, 64. <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | Aidan Wu | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image  | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | Arch Huang | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 
 
