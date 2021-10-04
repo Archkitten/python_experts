@@ -31,14 +31,16 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ## Sprint 5,6 week 6
 
+
+ https://docs.google.com/document/d/1FeJbJzuBx3cW1Xq_99WEhfwRuLiSILfDWNnbFVLeFNw/edit
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/commit/4e31feb1c70cc4f885c266caaab54a9f5e0dc484) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/ca3f8dd1ab6cba85d9c2c4dcca30e5b275c9ba8c) <br>[Ticket](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) | Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | William Wu | Message Into Image <br>  Research Base 2, 8, 16, 64. <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/commit/cd5c1f7524a5ed9ac3c75e8b4d72cece9e73b55a) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/cd5c1f7524a5ed9ac3c75e8b4d72cece9e73b55a) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| Aidan Wu | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Aidan Wu | Grayscale Images<br> Big O Notation | [Commit](https://github.com/Archkitten/python_experts/commit/a0bb621ff644493a8323f43ca68553c89b113442) <br> [Commit](https://github.com/Archkitten/python_experts/commit/d714679626ebfe58ac9c0333acc80d7d708cb636) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| Arch Huang | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Arch Huang | Grayscale Code Cleanup<br> Greenscale Images | [Commit](https://github.com/Archkitten/python_experts/commit/7b68ad6f761828f98ce4f11d560acd48f3dadee1) <br> [Commit](https://github.com/Archkitten/python_experts/commit/3432af1d8a025aacb795c8af83c2e1a513ebd424) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 
 
 ---
