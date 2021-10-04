@@ -31,6 +31,8 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ## Sprint 5,6 week 6
 
+
+ https://docs.google.com/document/d/1FeJbJzuBx3cW1Xq_99WEhfwRuLiSILfDWNnbFVLeFNw/edit
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
