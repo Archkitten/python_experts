@@ -46,13 +46,13 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 **Theme: Every Scrum Team needs to integrate "RGB Values with an Image" to their project.**
 
 > Requirements
-- [ ] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
+- [x] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
 
-- [ ] **Tyler + William + David** RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
+- [x] **Tyler + William + David** RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
 
-- [ ] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
+- [x] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
 
-- [ ] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
+- [x] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
 
 - [x] **William + David + Tyler** Research/Study sheet/journal.  what is base2, base8, base16.  what is base64?   How is base64 different? what are some ideas from this research that you can use in your PBL project?  Add backlog items.
 
