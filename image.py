@@ -58,10 +58,13 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
         img_dict['data'] = numpy.array(img_data)
         img_dict['hex_array'] = []
         img_dict['binary_array'] = []
+        img_dict['fhex_array'] = []
+        img_dict['fbinary_array'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
         img_dict['gray_data'] = []
         img_dict['green_data'] = []
+        img_dict['flip_data'] = []
         for pixel in img_dict['data']:
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
@@ -77,10 +80,24 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
             else:
                 img_dict['gray_data'].append((average, average, average))
                 img_dict['green_data'].append((0, average, 0))
+        for pixel in img_dict['flip_data'][::-1]:
+            # hexadecimal conversions
+            fhex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
+            fhex_value = fhex_value.replace("x", "0")
+            img_dict['fhex_array'].append("#" + fhex_value)
+            # binary conversions
+            fbin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
+            img_dict['fbinary_array'].append(fbin_value)
+            if len(pixel) > 3:
+                img_dict['flip_data'].append((pixel[0], pixel[1], pixel[2], pixel[3]))
+            else:
+                img_dict['flip_data'].append((pixel[0], pixel[1], pixel[2]))
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
         img_reference.putdata(img_dict['green_data'])
         img_dict['base64_GREEN'] = image_formatter(img_reference, img_dict['format'])
+        img_reference.putdata(img_dict['flip_data'])
+        img_dict['base64_FLIP'] = image_formatter(img_reference, img_dict['format'])
         # create color scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
     return img_list  # list is returned with all the attributes for each image dictionary
 

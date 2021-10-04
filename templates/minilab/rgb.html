@@ -30,6 +30,17 @@
                 document.getElementById("gbutton" + index).innerText = "Greenscale";
             }
         }
+        function changeFImage(index) {
+            if (document.getElementById("fbutton" + index).innerText == "Flip") {
+                document.getElementById("img" + index).src = document.getElementById("img_flip" + index).innerText;
+                document.getElementById("fbutton" + index).innerText = "Return";
+            }
+            else
+            {
+                document.getElementById("img" + index).src = document.getElementById("img_orig" + index).innerText;
+                document.getElementById("fbutton" + index).innerText = "Flip";
+            }
+        }
 
     </script>
     <title>RGB starter</title>
@@ -68,12 +79,16 @@
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                             <p hidden id="img_green{{loop.index}}">{{image.base64_GREEN}}</p>
+                            <p hidden id="img_green{{loop.index}}">{{image.base64_FLIP}}</p>
 
                             <button id="button{{loop.index}}" onclick="changeImage({{loop.index}})">
                                 Grayscale
                             </button>
                             <button id="gbutton{{loop.index}}" onclick="changeGImage({{loop.index}})">
                                 Greenscale
+                            </button>
+                            <button id="fbutton{{loop.index}}" onclick="changeFImage({{loop.index}})">
+                                Flip
                             </button>
 
                         </td>
