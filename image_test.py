@@ -28,3 +28,9 @@ degree_flippedImage.show()
 # Save watermarked image
 degree_flippedImage.save('./static/assets/Davidwatermark.jpg')
 
+d1 = ImageDraw.Draw(degree_flippedImage)
+font = ImageFont.truetype("arial.ttf", 100)
+d1.text((28, 36), "Hello World!", font=font, fill=(255, 0, 0))
+degree_flippedImage.show()
+degree_flippedImage.save("./static/assets/David_image_text.jpg")
+
