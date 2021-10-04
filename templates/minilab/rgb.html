@@ -19,6 +19,17 @@
                 document.getElementById("button" + index).innerText = "Grayscale";
             }
         }
+        function changeGImage(index) {
+            if (document.getElementById("gbutton" + index).innerText == "Greenscale") {
+                document.getElementById("img" + index).src = document.getElementById("img_green" + index).innerText;
+                document.getElementById("gbutton" + index).innerText = "Return";
+            }
+            else
+            {
+                document.getElementById("img" + index).src = document.getElementById("img_orig" + index).innerText;
+                document.getElementById("gbutton" + index).innerText = "Greenscale";
+            }
+        }
 
     </script>
     <title>RGB starter</title>
@@ -56,9 +67,13 @@
                             -->
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                            <p hidden id="img_green{{loop.index}}">{{image.base64_GREEN}}</p>
 
                             <button id="button{{loop.index}}" onclick="changeImage({{loop.index}})">
                                 Grayscale
+                            </button>
+                            <button id="gbutton{{loop.index}}" onclick="changeGImage({{loop.index}})">
+                                Greenscale
                             </button>
 
                         </td>

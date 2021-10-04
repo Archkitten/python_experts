@@ -61,6 +61,7 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
         img_dict['gray_data'] = []
+        img_dict['green_data'] = []
         for pixel in img_dict['data']:
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
@@ -72,10 +73,15 @@ def image_data(path=Path("static/img/"), img_list=None, web=False):  # path of s
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
             if len(pixel) > 3:
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
+                img_dict['green_data'].append((0, average, 0, pixel[3]))
             else:
                 img_dict['gray_data'].append((average, average, average))
+                img_dict['green_data'].append((0, average, 0))
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
+        img_reference.putdata(img_dict['green_data'])
+        img_dict['base64_GREEN'] = image_formatter(img_reference, img_dict['format'])
+        # create color scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
     return img_list  # list is returned with all the attributes for each image dictionary
 
 
