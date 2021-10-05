@@ -130,6 +130,52 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 
             bgColor();
         }
+
+        //right shift on binary
+        function rightShift(){
+            let binary = getBits();
+            binary = "0" + binary.substring(0,7) ;
+            // update conversions
+            setConversions(binary);
+            //document.write(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+            bgColor();
+
+        }
+
+        // left shit on binary
+        function leftShift(){
+            let binary = getBits();
+            binary = binary.substring(1,8) +"0" ;
+            // update conversions
+            setConversions(binary);
+            //document.write(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+            bgColor();
+
+        }
         // add is positive integer, subtract is negative integer
         function add(n) {
             let binary = getBits();
@@ -172,6 +218,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <div class="col-8">
                 <table class="table">
                     <tr id="table">
+                        <th>ShiftLeft(*2)</th>
                         <th>Plus</th>
                         <th>Binary</th>
                         <th>Octal</th>
@@ -180,8 +227,10 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                         <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>ASCII</th>
                         <th>Minus</th>
+                        <th>ShiftRight(/2)</th>
                     </tr>
                     <tr>
+                        <td><button type="button" id="shiftleft" onclick="leftShift()"><<</button></td>
                         <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                         <td id="binary">00000000</td>
                         <td id="octal">0</td>
@@ -190,6 +239,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td id="ascii">0</td>
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+                        <td><button type="button" id="shiftright" onclick="rightShift()"> >> </button></td>
 
                     </tr>
                 </table>
