@@ -34,7 +34,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | ---  | ---         | ---      | ---   |
 | Tyler Hickman | Logic Gates <br> Color Code <br>  | Ticket <br> Ticket | -/6<br>-/2|
 | William Wu | Logic Gates <br> Color Codes <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket  | -/6<br>-/2 |
-| David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> [Ticket] (https://github.com/Archkitten/python_experts/blob/master/templates/minilab/binary.html)| -/6<br>-/2 | 
+| David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> Ticket| -/6<br>-/2 | 
 | Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket | -/6<br>-/2 |
 | Aidan Wu | Extend/Switch ASCII to Unicode <br> Signed Addition <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket | -/6<br>-/2 |
 
