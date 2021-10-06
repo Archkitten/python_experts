@@ -29,29 +29,16 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
-## Week 7 (Sprint 7,8 Week 7): Due 10/8
-| Name | Requirement | Evidence | Grade |
-| ---  | ---         | ---      | ---   |
-| Tyler Hickman | Logic Gates <br> Color Code <br>  | Ticket <br> Ticket | -/6<br>-/2|
-| William Wu | Logic Gates <br> Color Codes <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket  | -/6<br>-/2 |
-| David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> Ticket| -/6<br>-/2 | 
-| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket | -/6<br>-/2 |
-| Aidan Wu | Extend/Switch ASCII to Unicode <br> Signed Addition <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket | -/6<br>-/2 |
-
----
-
 ## Sprint 5,6 week 6
 
-
- https://docs.google.com/document/d/1FeJbJzuBx3cW1Xq_99WEhfwRuLiSILfDWNnbFVLeFNw/edit
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/commit/4e31feb1c70cc4f885c266caaab54a9f5e0dc484) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/ca3f8dd1ab6cba85d9c2c4dcca30e5b275c9ba8c) <br>[Ticket](https://docs.google.com/document/d/1LO7dculG0NSa4rHQDsq7XzywEwxPha0O4xexPm_D2P0/edit) | Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| William Wu | Message Into Image <br>  Research Base 2, 8, 16, 64. <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/commit/cd5c1f7524a5ed9ac3c75e8b4d72cece9e73b55a) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/cd5c1f7524a5ed9ac3c75e8b4d72cece9e73b55a) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| Aidan Wu | Grayscale Images<br> Big O Notation | [Commit](https://github.com/Archkitten/python_experts/commit/a0bb621ff644493a8323f43ca68553c89b113442) <br> [Commit](https://github.com/Archkitten/python_experts/commit/d714679626ebfe58ac9c0333acc80d7d708cb636) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/26) <br>[Ticket](https://github.com/Archkitten/python_experts/issues/28) | Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| William Wu | Message Into Image <br>  Research Base 2, 8, 16, 64. <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Aidan Wu | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
-| Arch Huang | Grayscale Code Cleanup<br> Greenscale Images | [Commit](https://github.com/Archkitten/python_experts/commit/7b68ad6f761828f98ce4f11d560acd48f3dadee1) <br> [Commit](https://github.com/Archkitten/python_experts/commit/3432af1d8a025aacb795c8af83c2e1a513ebd424) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Arch Huang | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 
 
 ---
@@ -59,13 +46,13 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 **Theme: Every Scrum Team needs to integrate "RGB Values with an Image" to their project.**
 
 > Requirements
-- [x] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
+- [ ] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
 
 - [x] **Tyler + William + David** RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
 
-- [x] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
+- [ ] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
 
-- [x] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
+- [ ] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
 
 - [x] **William + David + Tyler** Research/Study sheet/journal.  what is base2, base8, base16.  what is base64?   How is base64 different? what are some ideas from this research that you can use in your PBL project?  Add backlog items.
 
