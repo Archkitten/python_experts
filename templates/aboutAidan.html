@@ -27,7 +27,28 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
 </body>
 
-<img src="/static/assets/aida.jpg" alt="Aidan Wu" width="600" height="500">
 
+<head>
+    <style>
+        .gfg {
+            margin: 3%;
+            position: relative;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 17px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="gfg">
+    <img src="/static/assets/aida.jpg" alt="Aidan Wu" width="600" height="500">
+    <h3 class="first-txt" style= "color:White;">
+        Aidan Wu
+    </h3>
+</div>
 
 </html>

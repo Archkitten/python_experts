@@ -74,6 +74,13 @@ def aboutWilliam():
 def video0():
     return render_template("minilab/video0.html")
 
+@app.route('/colorcodes/',methods=['GET', 'POST'])
+def colorcodes():
+    return render_template("minilab/colorcodes.html",
+          BITS=8,
+         imgBulbOn="/static/assets/bulb_on.jpg",
+         imgBulbOff="/static/assets/bulb_off.png")
+
 @app.route('/greet/', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
