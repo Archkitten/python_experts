@@ -73,6 +73,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             }
             return bits;
         }
+
         // setter for DOM values
         function setConversions(binary) {
             document.getElementById('binary').innerHTML = binary;
@@ -88,7 +89,21 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
              */
             // DOM assignment to ASCII conversion
             document.getElementById('ascii').innerHTML = String.fromCharCode(parseInt(binary, 2)).toString(10);
-            document.getElementById('unicode').innerHTML = String.fromCharCode(parseInt(binary, 2)).toString(10);
+            document.getElementById('unicode').innerHTML = A2U(document.getElementById('ascii').innerHTML);
+        }
+
+        // ASCII to Unicode
+        // It is different when you do the string 1 0 0 1 1 0 0 0
+        // Last 4 digits are interchangable
+        // ASCII will display nothing while Unicode will display a different character
+        function A2U(str) {
+            var reserved = '';
+
+            for (var i = 0; i < str.length; i++) {
+                reserved += '&#' + str.charCodeAt(i) + ';';
+            }
+
+            return reserved;
         }
 
         // algorithm to convert decimal to base using division and remainder
