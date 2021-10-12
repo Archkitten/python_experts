@@ -88,8 +88,12 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             // DOM assignment to Hexadecimal conversion
             document.getElementById('hexadecimal').innerHTML = sign + parseInt(binaryValue, 2).toString(16);
             // DOM assignment to Decimal conversion
-            document.getElementById('decimal').innerHTML = sign + parseInt(binaryValue, 2).toString(10);
-            /* Hack: show ASCII printable character(s) for each 8 bits
+            if (signBits == 0) {
+                document.getElementById('decimal').innerHTML = parseInt(binaryValue, 2).toString(10);
+            } else {
+                document.getElementById('decimal').innerHTML = (parseInt(binaryValue, 2) - 2 ** (BITS - 1)).toString(10);
+            }
+             /* Hack: show ASCII printable character(s) for each 8 bits
              DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
              below ASCII for more ideas of where to make changes
              */
