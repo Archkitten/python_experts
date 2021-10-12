@@ -34,7 +34,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | ---  | ---         | ---      | ---   |
 [CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
 | Tyler Hickman | Logic Gates <br> Color Code <br>  | [Ticket](https://github.com/Archkitten/python_experts/commit/65fe8c8d6d3c750aebe35f11767603080e240e0e) | -/6<br>-/2|
-| William Wu | Logic Gates <br> Color Codes <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket  | -/6<br>-/2 |
+| William Wu | Color Codes <br> |  [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940)  | -/6<br>-/2 |
 | David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> Ticket| -/6<br>-/2 | 
 | Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode | [Ticket](https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| -/6<br>-/2 |
 | Aidan Wu | Signed Addition <br> Unsigned Addition | [Ticket](https://github.com/Archkitten/python_experts/commit/4d74271499438677aaf00af8a4fdd3ab0dd9796c) <br> [Ticket(1)](https://github.com/Archkitten/python_experts/commit/e1e1ba712cf835af9eb4ff5d341ad704d92a06b3) <br> [Ticket(2)](https://github.com/Archkitten/python_experts/commit/43105927cd3e46c9c559645af6508f639d54ee14) | -/6<br>-/2 |
