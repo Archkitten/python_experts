@@ -74,6 +74,11 @@ def aboutWilliam():
 def video0():
     return render_template("minilab/video0.html")
 
+@app.route('/LogicG/')
+def LogicGates():
+    return render_template("minilab/LogicG.html")
+
+
 @app.route('/colorcodes/',methods=['GET', 'POST'])
 def colorcodes():
     return render_template("minilab/colorcodes.html",
@@ -165,3 +170,4 @@ def rgb():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
+
