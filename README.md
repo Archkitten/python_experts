@@ -32,12 +32,12 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ## Week 7 (Sprint 7,8 Week 7): Due 10/8
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
+[CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
 | Tyler Hickman | Logic Gates <br> Color Code <br>  | [Ticket](https://github.com/Archkitten/python_experts/commit/65fe8c8d6d3c750aebe35f11767603080e240e0e) | -/6<br>-/2|
 | William Wu | Logic Gates <br> Color Codes <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket  | -/6<br>-/2 |
 | David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> Ticket| -/6<br>-/2 | 
-| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode <br> Unsigned Addition | Ticket <https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24> Ticket <https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd> Ticket | -/6<br>-/2 |
+| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode <br> Unsigned Addition | [Ticket] (https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) [Ticket] (https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| -/6<br>-/2 |
 | Aidan Wu | Extend/Switch ASCII to Unicode <br> Signed Addition <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket | -/6<br>-/2 |
-[CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
 
 ---
 
