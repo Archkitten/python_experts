@@ -156,6 +156,27 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 
             bgColor();
         }
+        function toggleBit1(i) {
+            //alert("Digit action: " + i );
+            const dig1 = document.getElementById('digit1' + i);
+            const image1 = document.getElementById('bulb1' + i);
+            const butt1 = document.getElementById('butt1' + i);
+            // Change digit and visual
+            if (image1.src.match("{{ imgBulbOn }}")) {
+                dig1.value = 0;
+                image1.src = "{{ imgBulbOff }}";
+                butt1.innerHTML = "{{ msgTurnOn }}";
+            } else {
+                dig1.value = 1;
+                image1.src = "{{ imgBulbOn }}";
+                butt1.innerHTML = "{{ msgTurnOff }}";
+            }
+            // Binary numbers
+            const binary = getBits();
+            setConversions(binary);
+
+            bgColor();
+        }
         //right shift on binary
         function rightShift(){
             let binary = getBits();
@@ -232,6 +253,24 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         function bgColor() {
             document.body.style.backgroundColor = "#" + document.getElementById('topTable').rows[1].cells[3].innerHTML;
         }
+        function sum() {
+            let binary = getBits();
+            let carry = 0;
+            for (let i = binary.length - 1; i >= 0; i--) {
+                let first = document.getElementById('digit' + i).value
+                let second = document.getElementById('digit1' + i).value
+                let sum = parseInt(first, 2) + parseInt(second, 2)
+                if (sum > 1) {
+                    document.getElementById('sumdigit' + i).value =  sum - 2 + carry
+                    carry = 1
+                }
+                else {
+                    document.getElementById('sumdigit' + i).value =  sum + carry
+                    carry = 0
+                }
+                }
+            }
+            bgColor();
     </script>
 {% endblock %}
 
@@ -290,6 +329,39 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     </tr>
                 </table>
             </div>
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><img class="img-responsive py-3" id="bulb1{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                <button type="button" id="butt1{{i}}" onclick="toggleBit1('{{i}}')">{{ msgTurnOn }}</button>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><input type='text' id='digit1{{i}}' Value="0" size="1" readonly></td>
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td>
+                                <button type="button" id="sum{{i}}" onclick="sum()">Add</button>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for i in range(BITS) %}
+                            <td><input type='text' id='sumdigit{{i}}' Value="0" size="1" readonly></td>
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+
 
         </div>
     </div>
