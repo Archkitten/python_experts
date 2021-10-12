@@ -265,8 +265,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     carry = 1
                 }
                 else {
-                    document.getElementById('sumdigit' + i).value =  sum + carry
-                    carry = 0
+                    if ((sum + carry) > 1) {
+                        document.getElementById('sumdigit' + i).value = sum - 2 + carry
+                        carry = 1
+                    }
+                    else {
+                        document.getElementById('sumdigit' + i).value = sum + carry
+                        carry = 0
+                    }
+
                 }
                 }
             }
