@@ -74,6 +74,11 @@ def aboutWilliam():
 def video0():
     return render_template("minilab/video0.html")
 
+@app.route('/LogicG/')
+def LogicGates():
+    return render_template("minilab/LogicG.html")
+
+
 @app.route('/colorcodes/',methods=['GET', 'POST'])
 def colorcodes():
     return render_template("minilab/colorcodes.html",
@@ -89,6 +94,31 @@ def greet():
         if len(name) != 0:  # input field has content
             return render_template("/minilab/greet.html", name=name)
     return render_template("minilab/greet.html", name="World")
+
+
+@app.route('/tpt8extracredit/', methods=['GET', 'POST'])
+def tpt8extracredit():
+    # submit button has been pushed
+    if request.form:
+        n = request.form.get("num")
+        if len(str(n)) != 0:
+            n = int(n)
+            l = []
+            for i in range(n):
+                l.append(i)
+            nl = []
+            for i in range(0, n, 2):
+                nl.append(str(i))
+            return render_template("/minilab/week8tptextracredit.html",
+                                   l=l,
+                                   n=len(list(filter(lambda a: '2' in a or '8' in a, nl))))
+        else:
+            return render_template("/minilab/week8tptextracredit.html",
+                                   l=[],
+                                   n=0)
+    return render_template("/minilab/week8tptextracredit.html",
+                           l=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+                           n=2)
 
 
 @app.route('/binary/', methods=['GET', 'POST'])
@@ -136,19 +166,19 @@ def binary():
 
 
 # connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
-
-
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
-
-
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("hawkers.html")
+# @app.route('/kangaroos/')
+# def kangaroos():
+#     return render_template("kangaroos.html")
+#
+#
+# @app.route('/walruses/')
+# def walruses():
+#     return render_template("walruses.html")
+#
+#
+# @app.route('/hawkers/')
+# def hawkers():
+#     return render_template("hawkers.html")
 
 
 
@@ -165,3 +195,4 @@ def rgb():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
+
