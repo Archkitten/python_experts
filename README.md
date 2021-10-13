@@ -8,13 +8,12 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | Aidan | aidanywu | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3Aaidanywu) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Aaidanywu) | [Commits](https://github.com/Archkitten/python_experts/commits?author=aidanywu) | [Profile](https://github.com/aidanywu) | [Aidan, Arch, William](https://docs.google.com/document/d/1yGPJnDJTsHsVj_XPvZL9FYUptwKvOYQwFpZTkwAil4k/edit?usp=sharing) |
 | Arch | Archkitten | [Tasks](https://github.com/Archkitten/python_experts/issues?q=assignee%3AArchkitten) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Aarchkitten) | [Commits](https://github.com/Archkitten/python_experts/commits?author=Archkitten) | [Profile](https://github.com/Archkitten) | - |
- William | willcyber | [Tasks](https://github.com/Archkitten/python_experts/issues?q=assignee%3Awillcyber) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Awillcyber) | [Commits](https://github.com/Archkitten/python_experts/commits?author=willcyber) | [Profile](https://github.com/willcyber) |
+| William | willcyber | [Tasks](https://github.com/Archkitten/python_experts/issues?q=assignee%3Awillcyber) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Awillcyber) | [Commits](https://github.com/Archkitten/python_experts/commits?author=willcyber) | [Profile](https://github.com/willcyber) |
 | David | David-Xie123 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ADavid-Xie123) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3ADavid-Xie123) | [Commits](https://github.com/Archkitten/python_experts/commits?author=David-Xie123) | [Profile](http://github.com/David-Xie123) | [David, Tyler](https://docs.google.com/document/d/1I8Icisj5PvAJZjlz8MXOyfsih3Yv6XpvOQDr8sqHd4s/edit?usp=sharing) |
 | Tyler | Tyler929 | [Tasks](https://github.com/Archkitten/python_experts/issues?q=is%3Aissue+assignee%3ATyler929) | [Scrum Board](https://github.com/Archkitten/python_experts/projects/1?card_filter_query=assignee%3Atyler929) | [Commits](https://github.com/Archkitten/python_experts/commits?author=tyler929) | [Profile](https://github.com/Tyler929) | - |
 
 **Project Information:**
 ---------------
-
 
 ### Ideation
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
@@ -29,14 +28,24 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
+## Week 8 (Sprint 7,8 Week 8): Due 10/18
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Tyler Hickman | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-/3|
+| William Wu | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-/3|
+| Arch Huang | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-/3|
+| Davi Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-/3|
+| Aidan Wu |PBL Tasks <br> TT7 (Extra credit) <br> 3.7, 3.8 Notes | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-/3|
+
+
 ## Week 7 (Sprint 7,8 Week 7): Due 10/8
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-[CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
+| [CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
 | Tyler Hickman | Logic Gates <br> Color Code <br>  | [Ticket](https://github.com/Archkitten/python_experts/commit/65fe8c8d6d3c750aebe35f11767603080e240e0e) | -/6<br>-/2|
-| William Wu | Logic Gates <br> Color Codes <br> Unsigned Addition | Ticket <br> Ticket <br> Ticket  | -/6<br>-/2 |
-| David Xie | Signed Addition <br> Color Codes <br> Multiply & Divide by 2 | Ticket <br> Ticket <br> Ticket| -/6<br>-/2 | 
-| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode | [Ticket](https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| -/6<br>-/2 |
+| William Wu | Color Codes <br> Games Website |  [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/5e7583363f35d783bb2ca28b51208d270186285b) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/c075b80d09a869c92b9c515f01d3cb5ecc421e5e) | -/6<br>-/2 |
+| David Xie | Color Codes <br> Multiply & Divide by 2 | [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/fa8af4f08e97c239ee9676220b0be704deed785f)| -/6<br>-/2 | 
+| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode | [Commit](https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) <br> [Commit](https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| -/6<br>-/2 |
 | Aidan Wu | Signed Addition <br> Unsigned Addition | [Ticket](https://github.com/Archkitten/python_experts/commit/4d74271499438677aaf00af8a4fdd3ab0dd9796c) <br> [Ticket(1)](https://github.com/Archkitten/python_experts/commit/e1e1ba712cf835af9eb4ff5d341ad704d92a06b3) <br> [Ticket(2)](https://github.com/Archkitten/python_experts/commit/43105927cd3e46c9c559645af6508f639d54ee14) | -/6<br>-/2 |
 
 ---
