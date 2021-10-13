@@ -24,6 +24,10 @@ def about():
 def games():
     return render_template("games.html")
 
+@app.route('/games/rockpaper/')
+def rockpaper():
+    return render_template("rockpaper.html")
+
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
