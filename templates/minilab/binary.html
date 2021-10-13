@@ -74,6 +74,14 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             return bits;
         }
 
+        function getBits1() {
+            let bits = "";
+            for(let i = 0; i < BITS; i++) {
+                bits = bits + document.getElementById('sumdigit' + i).value;
+            }
+            return bits;
+        }
+
         // setter for DOM values
         function setConversions(binary) {
             document.getElementById('binary').innerHTML = binary;
@@ -100,6 +108,33 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             // DOM assignment to ASCII conversion
             document.getElementById('ascii').innerHTML = String.fromCharCode(parseInt(binary, 2)).toString(10);
             document.getElementById('unicode').innerHTML = AsciiToUnicode(document.getElementById('ascii').innerHTML);
+        }
+
+        function setConversions1(binary) {
+            document.getElementById('binary1').innerHTML = binary;
+            let signBits = binary.substr(0, 1);
+            let sign = "+";
+            if (signBits == 1) {
+                sign = "-";
+            }
+            let binaryValue = binary.substr(1, binary.length - 1);
+            // DOM assignment to Octal conversion
+            document.getElementById('octal1').innerHTML = sign + parseInt(binaryValue, 2).toString(8);
+            // DOM assignment to Hexadecimal conversion
+            document.getElementById('hexadecimal1').innerHTML = sign + parseInt(binaryValue, 2).toString(16);
+            // DOM assignment to Decimal conversion
+            if (signBits == 0) {
+                document.getElementById('decimal1').innerHTML = parseInt(binaryValue, 2).toString(10);
+            } else {
+                document.getElementById('decimal1').innerHTML = (parseInt(binaryValue, 2) - 2 ** (BITS - 1)).toString(10);
+            }
+            /* Hack: show ASCII printable character(s) for each 8 bits
+            DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
+            below ASCII for more ideas of where to make changes
+            */
+            // DOM assignment to ASCII conversion
+            document.getElementById('ascii1').innerHTML = String.fromCharCode(parseInt(binary, 2)).toString(10);
+            document.getElementById('unicode1').innerHTML = AsciiToUnicode(document.getElementById('ascii1').innerHTML);
         }
 
         // ASCII to Unicode
@@ -151,8 +186,11 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 butt.innerHTML = "{{ msgTurnOff }}";
             }
             // Binary numbers
+            sum();
             const binary = getBits();
+            const binary1 = getBits1();
             setConversions(binary);
+            setConversions1(binary1);
 
             bgColor();
         }
@@ -172,8 +210,11 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 butt1.innerHTML = "{{ msgTurnOff }}";
             }
             // Binary numbers
+            sum();
             const binary = getBits();
+            const binary1 = getBits1();
             setConversions(binary);
+            setConversions1(binary1);
 
             bgColor();
         }
@@ -191,11 +232,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 if (digit === "1") {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                    sum()
                 } else {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                    sum()
                 }
             }
+            let binary1 = getBits1();
+            setConversions1(binary1);
             bgColor();
 
         }
@@ -214,11 +259,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 if (digit === "1") {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                    sum()
                 } else {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                    sum()
                 }
             }
+            let binary1 = getBits1();
+            setConversions1(binary1);
             bgColor();
 
         }
@@ -243,11 +292,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 if (digit === "1") {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                    sum();
                 } else {
                     document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
                     document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                    sum();
                 }
             }
+            let binary1 = getBits1();
+            setConversions1(binary1);
             bgColor();
         }
         function bgColor() {
@@ -352,15 +405,28 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     </tr>
                 </table>
             </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="col-8">
+                <table class="table">
+                    <tr id="table">
+                        <th>Binary</th>
+                        <th>Octal</th>
+                        <th>Hexadecimal</th>
+                        <th>Decimal</th>
+                        <th>ASCII</th>
+                        <th>Unicode</th>
+                    </tr>
+                    <tr><td id="binary1">00000000</td>
+                        <td id="octal1">0</td>
+                        <td id="hexadecimal1">0</td>
+                        <td id="decimal1">0</td>
+                        <td id="ascii1">0</td>
+                        <td id="unicode1">0</td>
+                    </tr>
+                </table>
+            </div>
             <div class="col-12">
                 <table class="table">
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td>
-                                <button type="button" id="sum{{i}}" onclick="sum()">Add</button>
-                            </td>
-                        {% endfor %}
-                    </tr>
                     <tr>
                         {% for i in range(BITS) %}
                             <td><input type='text' id='sumdigit{{i}}' Value="0" size="1" readonly></td>
