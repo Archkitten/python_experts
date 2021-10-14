@@ -123,22 +123,25 @@ def tpt8extracredit():
         n = request.form.get("num")
         if len(str(n)) != 0:
             n = int(n)
-            nl = []
-            l = []
-            for i in range(0, n, 2):
-                nl.append(str(i))
             if n <= 100:
+                l = []
                 for i in range(n):
                     l.append(i)
                 return render_template("/minilab/week8tptextracredit.html",
                                        l=l,
-                                       n=len(list(filter(lambda a: '2' in a or '8' in a, nl))))
+                                       n=len(list(filter(lambda a: '2' in str(a) or '8' in str(a), l[::2]))))
             else:
-                for i in range(n - 5, n):
+                l = []
+                for i in range(0, n, 2):
                     l.append(i)
-                return render_template("/minilab/week8tptextracredit.html",
-                                       l='[0, 1, 2, 3, 4, 5, ..., ' + str(l[0]) + ', ' + str(l[1]) + ', ' + str(l[2]) + ', ' + str(l[3]) + ', ' + str(l[4]) + ']',
-                                       n=len(list(filter(lambda a: '2' in a or '8' in a, nl))))
+                if n % 2 == 1:
+                    return render_template("/minilab/week8tptextracredit.html",
+                                       l='[0, 1, 2, 3, 4, 5, ..., ' + str(l[-3]) + ', ' + str(l[-2] - 1) + ', ' + str(l[-2]) + ', ' + str(l[-1] - 1) + ', ' + str(l[-1]) + ']',
+                                       n=len(list(filter(lambda a: '2' in str(a) or '8' in str(a), l))))
+                if n % 2 == 0:
+                    return render_template("/minilab/week8tptextracredit.html",
+                                           l='[0, 1, 2, 3, 4, 5, ..., ' + str(l[-3] + 1) + ', ' + str(l[-2]) + ', ' + str(l[-2] + 1) + ', ' + str(l[-1]) + ', ' + str(l[-1] + 1) + ']',
+                                           n=len(list(filter(lambda a: '2' in str(a) or '8' in str(a), l))))
         else:
             return render_template("/minilab/week8tptextracredit.html",
                                    l=[],
