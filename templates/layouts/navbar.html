@@ -29,8 +29,18 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                         <a class="dropdown-item" href="/aboutWilliam">William</a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/games">Games <span class="sr-only"></span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a class="dropdown-item" href="/games">Menu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/games/rockpaper">Rock Paper Scissors</a>
+                        <a class="dropdown-item" href="/games/tictactoe">Tic Tac Toe</a>
+                        <a class="dropdown-item" href="/games/sleepingsimulator">Sleeping Simulator</a>
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
                         MiniLab

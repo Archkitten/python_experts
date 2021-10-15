@@ -194,6 +194,11 @@ def binary():
                            imgBulbOff="/static/assets/bulb_off.png")
 
 
+@app.route('/games/sleepingsimulator/', methods=['GET', 'POST'])
+def sleepingsimulator():
+    return render_template("sleepingsimulator.html", img1="/static/assets/awakepatricksimulator.gif", img2="/static/assets/sleepingpatricksimulator.gif")
+
+
 # connects /kangaroos path to render kangaroos.html
 # @app.route('/kangaroos/')
 # def kangaroos():
