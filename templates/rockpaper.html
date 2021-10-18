@@ -40,30 +40,30 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     }
     var  compare = function (choice1,choice2){
         if(choice1 === choice2){
-            alert ("The result is a tie!");
+            alert ("You tied!");
         }
         if(choice1 === "rock"){
             if(choice2 === "scissors"){
-                alert ("rock wins")
+                alert ("Your opponent played scissors. You won :D")
             }
-            else{
-                alert ("paper wins")
+            if(choice2 === "paper"){
+                alert ("Your opponent played paper. You lost :(")
             }
         }
         if(choice1 === "paper"){
             if(choice2 === "rock"){
-                alert ("paper wins")
+                alert ("Your opponent played rock. You won :D")
             }
-            else{
-                alert ("scissors wins")
+            if(choice2 === "scissors"){
+                alert ("Your opponent played scissors. You lost :(")
             }
         }
         if(choice1 === "scissors"){
-            if(choice2 === "rock"){
-                alert ("rock wins")
+            if(choice2 === "paper"){
+                alert ("Your opponent played paper. You won :D")
             }
-            else{
-                alert ("scissors wins")
+            if(choice2 === "rock"){
+                alert ("Your opponent played rock. You lost :(")
             }
         }
     };
