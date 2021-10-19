@@ -24,6 +24,10 @@ def about():
 def games():
     return render_template("games.html")
 
+@app.route('/games/sleepingsimulator/', methods=['GET', 'POST'])
+def sleepingsimulator():
+    return render_template("sleepingsimulator.html",)
+
 @app.route('/games/rockpaper/')
 def rockpaper():
     return render_template("rockpaper.html")
@@ -31,6 +35,10 @@ def rockpaper():
 @app.route('/games/tictactoe/')
 def tictactoe():
     return render_template("tictactoe.html")
+
+@app.route('/games/whackamole/')
+def wackamole():
+    return render_template("whackamole.html")
 
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
@@ -192,11 +200,6 @@ def binary():
                            BITS=8,
                            imgBulbOn="/static/assets/bulb_on.jpg",
                            imgBulbOff="/static/assets/bulb_off.png")
-
-
-@app.route('/games/sleepingsimulator/', methods=['GET', 'POST'])
-def sleepingsimulator():
-    return render_template("sleepingsimulator.html", img1="/static/assets/awakepatricksimulator.gif", img2="/static/assets/sleepingpatricksimulator.gif")
 
 
 # connects /kangaroos path to render kangaroos.html
