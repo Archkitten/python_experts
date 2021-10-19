@@ -40,6 +40,10 @@ def tictactoe():
 def wackamole():
     return render_template("whackamole.html")
 
+@app.route('/games/blackscreen/')
+def wackamole():
+    return render_template("blackscreen.html")
+
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
