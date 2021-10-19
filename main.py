@@ -37,11 +37,11 @@ def tictactoe():
     return render_template("tictactoe.html")
 
 @app.route('/games/whackamole/')
-def wackamole():
+def whackamole():
     return render_template("whackamole.html")
 
 @app.route('/games/blackscreen/')
-def wackamole():
+def blackscreen():
     return render_template("blackscreen.html")
 
 
