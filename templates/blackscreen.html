@@ -9,24 +9,30 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <html lang="en">
 {% include "layouts/base.html" %}
 
+<audio id="longDay" controls style="display:none">
+    <source src="/static/assets/Long%20Day.mp3" type="audio/mpeg"> Your browser does not support audio.
+</audio>
 
+<script>
+    //https://stackoverflow.com/questions/43958637/how-to-play-a-sound-on-key-press-in-javascript
+    document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 37) {
+            document.getElementById('longDay').play();
+        }
+        if (e.keyCode == 39) {
+            document.getElementById('longDay').play();
+        }
+    });
+</script>
 
 
 
 <head>
     <title>Playground | Games </title>
-
 </head>
 
-<body>
-
+<body style="background-color:black; background-image:none">
 <!- Try building a new body here ->
-<h1><strong>Tic Tac Toe</strong></h1>
-<h4 style="color:FireBrick;">Welcome to the Playground!</h4>
-<p>Classic Tic Tac Toe!</p>
-
-
-</div>
 </body>
 
 </html>
