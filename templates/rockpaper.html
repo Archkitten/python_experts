@@ -33,16 +33,26 @@ width:100%;
 border:2px solid #aaa;
 ]
 
+<div class="row justify-content-left" style="margin: 2%;">
+<div class="col-12">
+<p> Hello, {{ name }}!</p>
+</div>
+<div class="col-12">
+<form action="" id="greet" method="POST" >
+<label for="name">Type a greeting name?</label>
+<input name="name" id="name">
+<input type="submit" value="Greetings!">
+</form>
+</div>
+</div>
 
 </style>
 <button type='button'>Rock</button>
 <button type='button'>Paper</button>
 <button type='button'>Scissors</button>
-var userChoice = <input type="text" id="userInput" placeholder="stuff">
-<br>
-<button onclick="fn1()" type="btn1">Lock in answer</button>
-
-</script>
+<label for="userChoice">Do you choose rock, paper or scissors?</label>
+<input type="text" id="userChoice" placeholder="stuff">
+<input type="submit" value="Input!">
 
 <script>
     var userChoice = prompt("Do you choose rock, paper or scissors?");
