@@ -8,6 +8,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <!DOCTYPE HTML>
 <html lang="en">
 {% include "layouts/base.html" %}
+{% include "layouts/notrickroll.html" %}
 
 <audio id="longDay" controls style="display:none">
     <source src="/static/assets/Long%20Day.mp3" type="audio/mpeg"> Your browser does not support audio.
@@ -20,19 +21,16 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     //https://stackoverflow.com/questions/43958637/how-to-play-a-sound-on-key-press-in-javascript
     let music1 = false;
     document.addEventListener('keydown', function(e) {
-        // Left Arrow Key
         if ((e.keyCode === 49) && music1 === false) {
             document.getElementById('longDay').play();
             music1 = true;
         }
-        else {
+        else if ((e.keyCode === 49) && music1 === true){
             document.getElementById('longDay').pause();
             music1 = false;
         }
     });
 </script>
-
-
 
 <head>
     <title>Playground | Games </title>
