@@ -8,7 +8,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <!DOCTYPE HTML>
 <html lang="en">
 {% include "layouts/base.html" %}
-{% include "layouts/notrickroll.html" %}
+
 
 <audio id="longDay" controls style="display:none">
     <source src="/static/assets/Long%20Day.mp3" type="audio/mpeg"> Your browser does not support audio.
@@ -16,10 +16,14 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <audio id="footsteps" controls style="display:none">
     <source src="/static/assets/Footsteps.mp3" type="audio/mpeg"> Your browser does not support audio.
 </audio>
+<audio id="notrickroll" controls style="display:none">
+    <source src="/static/assets/notrickrolllol.mp3" type="audio/mpeg"> Your browser does not support audio.
+</audio>
 
 <script>
     //https://stackoverflow.com/questions/43958637/how-to-play-a-sound-on-key-press-in-javascript
     let music1 = false;
+    let musicEasterEgg = false;
     document.addEventListener('keydown', function(e) {
         if ((e.keyCode === 49) && music1 === false) {
             document.getElementById('longDay').play();
@@ -29,6 +33,14 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             document.getElementById('longDay').pause();
             music1 = false;
         }
+        if ((e.keyCode === 220) && musicEasterEgg === false) {
+            document.getElementById('notrickroll').play();
+            musicEasterEgg = true;
+        }
+        {#else if ((e.keyCode === 32) && musicSpace === true) {#}
+        {#    document.getElementById('notrickroll').pause();#}
+        {#    musicSpace = false;#}
+        {# }#}
     });
 </script>
 
