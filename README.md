@@ -28,6 +28,17 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
+##Induvidual Final Videos##
+| Name | Evidence | Grade |
+| ---  | ---      | ---   |
+| Tyler Hickman | Video | -/8|
+| William Wu  | Video | -/8 |
+| Arch Huang | Video | -/8 |
+| Davi Xie | Video | -/8 |
+| Aidan Wu | Video | -/8 |
+
+
+
 ## Week 8 (Sprint 7,8 Week 8): Due 10/18
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
