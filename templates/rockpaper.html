@@ -27,8 +27,34 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <p>Select either Rock, Paper, or Scissors.</p>
 <h4><strong>Reload the page to play again!</strong></h4>
 
-<script>
+<style>
+input[type=text][
+width:100%;
+border:2px solid #aaa;
+]
 
+<div class="row justify-content-left" style="margin: 2%;">
+<div class="col-12">
+<p> Hello, {{ name }}!</p>
+</div>
+<div class="col-12">
+<form action="" id="greet" method="POST" >
+<label for="name">Type a greeting name?</label>
+<input name="name" id="name">
+<input type="submit" value="Greetings!">
+</form>
+</div>
+</div>
+
+</style>
+<button type='button'>Rock</button>
+<button type='button'>Paper</button>
+<button type='button'>Scissors</button>
+<label for="userChoice">Do you choose rock, paper or scissors?</label>
+<input type="text" id="userChoice" placeholder="stuff">
+<input type="submit" value="Input!">
+
+<script>
     var userChoice = prompt("Do you choose rock, paper or scissors?");
     var computerChoice = Math.random();
     if (computerChoice <0.34){
