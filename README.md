@@ -32,7 +32,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Name | Evidence | Grade |
 | ---  | ---      | ---   |
 | Tyler Hickman | Video | -/8|
-| William Wu | Video | -/8 |
+| William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) | -/8 |
 | Arch Huang | Video | -/8 |
 | Davi Xie | Video | -/8 |
 | Aidan Wu | Video | -/8 |
