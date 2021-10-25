@@ -54,7 +54,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Tyler Hickman | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
 | William Wu | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes <br> Tic Tac Toe |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket <br> [Ticket](https://github.com/Archkitten/python_experts/commit/18a9b8d80444e7355e9dc6f4cc8bb6828d23478f) <br> [Ticket2](https://github.com/Archkitten/python_experts/commit/5c4059dccdf416ec8025a4b89554293ee7a0fcff)| -/5<br>-/0.25<br>-3/3|
 | Arch Huang | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
-| Davi Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
+| David Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
 | Aidan Wu |PBL Tasks <br> TT7 (Extra credit) <br> 3.7, 3.8 Notes | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
 
 
