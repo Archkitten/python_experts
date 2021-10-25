@@ -35,7 +35,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) | -/8 |
 | Arch Huang | [Video](https://drive.google.com/file/d/1dvsBRIPT3yJJUapbyUXYlXkdFJYdX67z/view?usp=sharing) | -/8 |
 | Davi Xie | Video | -/8 |
-| Aidan Wu | Video | -/8 |
+| Aidan Wu | [Video](https://drive.google.com/file/d/1SjWx5oSfoCKfbk6wVSblilE7w6UhlDtG/view?usp=sharing) | -/8 |
 
 ### Peer Video Reviews
 | Name | Comment |
