@@ -103,6 +103,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             document.getElementById('MarioStarMusic').pause();
             document.getElementById('MarioDeath').play();
             musicMarioDeath = true;
+            musicMarioLevelMusic = false;
         }
 
         // C (Coin)
@@ -110,12 +111,13 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             document.getElementById('MarioCoin').play();
         }
         // Z (Star Power)
+        /*
         if ((e.keyCode === 90) && musicMarioLevelMusic === true) {
             document.getElementById('MarioLevelMusic').pause();
             musicMarioLevelMusic = false;
             document.getElementById('MarioStarMusic').play();
         }
-
+        */
 
 
 
