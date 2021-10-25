@@ -34,7 +34,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Tyler Hickman | [Video](https://drive.google.com/file/d/1d1mFjmFwKx2wYbJUxOQ3T_I2FTGH8cjH/view?usp=sharing) | -/8|
 | William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) | -/8 |
 | Arch Huang | [Video](https://drive.google.com/file/d/1dvsBRIPT3yJJUapbyUXYlXkdFJYdX67z/view?usp=sharing) | -/8 |
-| David Xie | Video | -/8 |
+| David Xie | [Video](https://www.youtube.com/watch?v=D0eGNkz5wOo) | -/8 |
 | Aidan Wu | [Video](https://drive.google.com/file/d/1SjWx5oSfoCKfbk6wVSblilE7w6UhlDtG/view?usp=sharing) | -/8 |
 
 ### Peer Video Reviews
