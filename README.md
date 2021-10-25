@@ -32,7 +32,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Name | Evidence | Grade |
 | ---  | ---      | ---   |
 | Tyler Hickman | Video | -/8|
-| William Wu  | Video | -/8 |
+| William Wu | Video | -/8 |
 | Arch Huang | Video | -/8 |
 | Davi Xie | Video | -/8 |
 | Aidan Wu | Video | -/8 |
@@ -40,11 +40,11 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ### Peer Video Reviews
 | Name | Comment |
 | ---  | ---      |
-| Tyler Hickman | Ticket |
-| William Wu  | Ticket |
-| Arch Huang | Ticket |
-| Davi Xie | Ticket |
-| Aidan Wu | Ticket |
+| Tyler Hickman | Ticket <br> Ticket <br> Ticket <br> Ticket |
+| William Wu | Ticket <br> Ticket <br> Ticket <br> Ticket |
+| Arch Huang | Ticket <br> Ticket <br> Ticket <br> Ticket |
+| Davi Xie | Ticket <br> Ticket <br> Ticket <br> Ticket |
+| Aidan Wu | Ticket <br> Ticket <br> Ticket <br> Ticket |
 
 ---
 
