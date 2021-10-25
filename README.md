@@ -28,7 +28,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
-## Induvidual Final Videos
+## Individual Final Videos
 | Name | Evidence | Grade |
 | ---  | ---      | ---   |
 | Tyler Hickman | [Video](https://drive.google.com/file/d/1d1mFjmFwKx2wYbJUxOQ3T_I2FTGH8cjH/view?usp=sharing) | -/8|
@@ -40,7 +40,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ### Peer Video Reviews
 | Name | Comment |
 | ---  | ---      |
-| Tyler Hickman | William: I really liked how you explained how important your leadership job is. I agree with you that the key to collaboration is good leadership, which you demonstrated. You demonstrated your knowledge of if else statements in your logic gates. It made your code effective and is perfect for lazy coders. I loved how you inputted a gray scale as a subsitutue for gray scale. It's very unique and clever. One suggestion I have is to format your logic gate user interface a bit better. I understand why you inputted tables but I believe there is a better approach. In my opionion, the logic gate page is too spread out. I think you can use the space better. Overewall, great job and wonderful video! <br> Ticket <br> Ticket <br> Ticket |
+| Tyler Hickman | William Wu: I really liked how you explained how important your leadership job is. I agree with you that the key to collaboration is good leadership, which you demonstrated. You demonstrated your knowledge of if else statements in your logic gates. It made your code effective and is perfect for lazy coders. I loved how you inputted a gray scale as a subsitutue for gray scale. It's very unique and clever. One suggestion I have is to format your logic gate user interface a bit better. I understand why you inputted tables but I believe there is a better approach. In my opionion, the logic gate page is too spread out. I think you can use the space better. Overewall, great job and wonderful video! <br> Ticket <br> Ticket <br> Ticket |
 | William Wu | Ticket <br> Ticket <br> Ticket <br> Ticket |
 | Arch Huang | Ticket <br> Ticket <br> Ticket <br> Ticket |
 | Davi Xie | Ticket <br> Ticket <br> Ticket <br> Ticket |
