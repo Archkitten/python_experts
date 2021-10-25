@@ -34,17 +34,17 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Tyler Hickman | [Video](https://drive.google.com/file/d/1d1mFjmFwKx2wYbJUxOQ3T_I2FTGH8cjH/view?usp=sharing) | -/8|
 | William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) | -/8 |
 | Arch Huang | [Video](https://drive.google.com/file/d/1dvsBRIPT3yJJUapbyUXYlXkdFJYdX67z/view?usp=sharing) | -/8 |
-| Davi Xie | Video | -/8 |
+| David Xie | Video | -/8 |
 | Aidan Wu | [Video](https://drive.google.com/file/d/1SjWx5oSfoCKfbk6wVSblilE7w6UhlDtG/view?usp=sharing) | -/8 |
 
 ### Peer Video Reviews
 | Name | Comment |
 | ---  | ---      |
-| Tyler Hickman | William Wu: I really liked how you explained how important your leadership job is. I agree with you that the key to collaboration is good leadership, which you demonstrated. You demonstrated your knowledge of if else statements in your logic gates. It made your code effective and is perfect for lazy coders. I loved how you inputted a gray scale as a subsitutue for gray scale. It's very unique and clever. One suggestion I have is to format your logic gate user interface a bit better. I understand why you inputted tables but I believe there is a better approach. In my opionion, the logic gate page is too spread out. I think you can use the space better. Overewall, great job and wonderful video! <br> Ticket <br> Ticket <br> Ticket |
+| Tyler Hickman | William Wu: I really liked how you explained how important your leadership job is. I agree with you that the key to collaboration is good leadership, which you demonstrated. You demonstrated your knowledge of if else statements in your logic gates. It made your code effective and is perfect for lazy coders. I loved how you inputted a green scale as a subsitutue for gray scale. It's very unique and clever. One suggestion I have is to format your logic gate user interface a bit better. I understand why you inputted tables but I believe there is a better approach. In my opionion, the logic gate page is too spread out. I think you can use the space better. Overewall, great job and wonderful video! <br> Ticket <br> Ticket <br> Ticket |
 | William Wu | Ticket <br> Ticket <br> Ticket <br> Ticket |
 | Arch Huang | William Wu: Very clever how you used conditional variables and a event listen to detect when a key was pressed. I found it really unique that you could intereact with the music. Your demonstration was AMAZING. You explained the code very well and I liked how you put text of what keys you were pressing to make your deomonstartion easier to follow. Your implementation of lables and checkboxes helps organize all our roles and duties so that we can all collaborate better. One suggestion I have is to add some instructions on your blackscreen music game to help the user know what is going on. Overall, amazing job Arch! <br> Ticket <br> Ticket <br> Ticket |
-| David Xie | Ticket <br> Ticket <br> Ticket <br> Ticket |
-| Aidan Wu | Ticket <br> Ticket <br> Ticket <br> Ticket |
+| David Xie | William Wu: David had not implemented his video. However, he did a great job collaboraing on the website idea presentation and also coded the color code minilab as well as made the user interface of the website look better in the about page and games page. <br> Ticket <br> Ticket <br> Ticket |
+| Aidan Wu | William Wu: Great job explaining how the binary code worked. You explained very clearly what the purpose of the parsint and fromcharcode is in the code. Very clever and effective use of if else statements. You explained how the carry worked in your code and on the website very clearly, demonstarting a clear knowledge of the code. Very effective use of iteration that shortens th amount of code written while still achieving the same result. This way, it goes through the l function in the range (0,2,n) without needing to type the same thing over and over again. One suggestion I have for you is to implement a nicer looking user interface for the extra credit challenge. Overall, you explained all the code very well. Great job! <br> Ticket <br> Ticket <br> Ticket |
 
 ---
 
