@@ -175,7 +175,7 @@ def binary():
                                        imgBulbOn="/static/assets/bulb_on.jpg",
                                        imgBulbOff="/static/assets/bulb_off.png",
                                        BITS=int(bits))
-            if bulb == "BULB2":
+            elif bulb == "BULB2":
                 return render_template("minilab/binary.html",
                                        imgBulbOn="/static/assets/bulb_on1.jpg",
                                        imgBulbOff="/static/assets/bulb_off1.jpg",
@@ -190,7 +190,7 @@ def binary():
                                        imgBulbOn="/static/assets/bulb_on.jpg",
                                        imgBulbOff="/static/assets/bulb_off.png",
                                        BITS=8)
-            if bulb == "BULB2":
+            elif bulb == "BULB2":
                 return render_template("minilab/binary.html",
                                        imgBulbOn="/static/assets/bulb_on1.jpg",
                                        imgBulbOff="/static/assets/bulb_off1.jpg",
