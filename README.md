@@ -46,6 +46,8 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | Davi Xie | Ticket |
 | Aidan Wu | Ticket |
 
+---
+
 ## Week 8 (Sprint 7,8 Week 8): Due 10/18
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
