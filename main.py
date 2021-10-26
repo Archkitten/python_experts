@@ -44,6 +44,10 @@ def whackamole():
 def blackscreen():
     return render_template("blackscreen.html")
 
+@app.route('/games/terminal/')
+def terminal():
+    return render_template("terminal.html")
+
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
