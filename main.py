@@ -44,17 +44,6 @@ def whackamole():
 def blackscreen():
     return render_template("blackscreen.html")
 
-@app.route('/games/terminal/', methods=['GET', 'POST'])
-def terminal():
-    # submit button has been pushed
-    if request.form:
-        commandInputPY = request.form.get("commandInput")
-        if commandInputPY == "echo":  # input field has content
-            return render_template("/terminal.html", commandOutput=commandInputPY)
-        elif commandInputPY == "viewport":  # viewport
-            return render_template("/terminal.html", commandOutput="G1 G2 G3 G4")
-    return render_template("terminal.html", commandOutput="Unknown command.")
-
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
@@ -238,6 +227,61 @@ def rgb():
     path = Path(app.root_path) / "static" / "img"
     web = True
     return render_template('minilab/rgb.html', images=image_data(path, None, web))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route('/games/terminal/', methods=['GET', 'POST'])
+def terminal():
+    # submit button has been pushed
+    if request.form:
+        commandInputPY = request.form.get("commandInput")
+        if commandInputPY == "echo":  # input field has content
+            return render_template("/terminal/terminalG1.html", commandOutput=commandInputPY)
+        elif commandInputPY == "viewport":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="G1 G2 G3 G4")
+        elif commandInputPY == "viewport G1":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Online, Password Protected")
+        elif commandInputPY == "viewport G2":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Offline, Password Protected")
+        elif commandInputPY == "viewport G3":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Online")
+        elif commandInputPY == "viewport G4":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Offline")
+        elif commandInputPY == "connect G1":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="You are already connected.")
+        elif commandInputPY == "connect G2":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Unauthorized access.")
+        elif commandInputPY == "connect G3":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Current user online.")
+        elif commandInputPY == "connect G4":  # viewport
+            return render_template("/terminal/terminalG1.html", commandOutput="Connecting to G4...")
+    return render_template("/terminal/terminalG1.html", commandOutput="Unknown command.")
+
+
+
+
+
+
+
+
+
+
 
 
 # runs the application on the development server
