@@ -9,29 +9,33 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <html lang="en">
 {% include "layouts/base.html" %}
 
-<script type="text/javascript">
-    function calculate(){
-        var ph = document.getElementById('ph').value;
-        if(ph > 7.45){
-            var str="Alkalosis";
-        }else if(ph < 7.35){
-            var str="Acidosis";
-        } else{
-            var str="Normal";
-        }
-        document.getElementById('acidalk').value =str;
-    }
-</script>
-
 <head>
     <title>Playground | Games </title>
 </head>
 
-<body style="background-color:black; background-image:none">
+<body>
 
-    pH<input type="textbox" name="ph"><br>
-    <button onclick="calculate()">Calculate</button>
-    <input type="textbox" id="acidalk" >
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+{#        <p style="color:lime">T:\Green\G1></p> <input name="command" id="command">#}
+{#        <input type="submit" value="enter">#}
+
+        <form action="" id="input" method="POST">
+            <label for="commandInputId" style="color:lime">T:\Green\G1></label>
+            <input name="commandInput" id="commandInputId" type="text" class="input-box bg-dark" style="color:lime">
+        </form>
+
+        <div class="col-12">
+            <p style="color:lime">{{ commandOutput }}</p>
+        </div>
+    </div>
+
+    <div class="container p-3 my-3 bg-light text-black rounded">
+        <h5>README.txt</h5>
+        <p>Hello Agent G1. Your task is to secure this terminal and prevent information leaks. At the same time, if you can find any information from competitors, don't be afraid to snoop around and record anything you find.</p>
+        <p> In case you forget how to operate this terminal, a list of commands has been provided below. Good luck soldier.</p>
+        <h6>echo - echo</h6>
+        <h6>viewport - Lists out the terminal ports.</h6>
+    </div>
 
 </body>
 

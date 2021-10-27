@@ -44,9 +44,16 @@ def whackamole():
 def blackscreen():
     return render_template("blackscreen.html")
 
-@app.route('/games/terminal/')
+@app.route('/games/terminal/', methods=['GET', 'POST'])
 def terminal():
-    return render_template("terminal.html")
+    # submit button has been pushed
+    if request.form:
+        commandInputPY = request.form.get("commandInput")
+        if commandInputPY == "echo":  # input field has content
+            return render_template("/terminal.html", commandOutput=commandInputPY)
+        elif commandInputPY == "viewport":  # viewport
+            return render_template("/terminal.html", commandOutput="G1 G2 G3 G4")
+    return render_template("terminal.html", commandOutput="Unknown command.")
 
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
