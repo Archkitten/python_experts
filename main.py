@@ -44,6 +44,10 @@ def whackamole():
 def blackscreen():
     return render_template("blackscreen.html")
 
+# @app.route('/games/terminal/')
+# def terminal():
+#     return render_template("terminal.html")
+
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
 def aboutAidan():
@@ -246,8 +250,8 @@ def rgb():
 
 
 
-@app.route('/games/terminal/', methods=['GET', 'POST'])
-def terminal():
+@app.route('/games/terminalG1', methods=['GET', 'POST'])
+def terminalG1():
     # submit button has been pushed
     if request.form:
         commandInputPY = request.form.get("commandInput")
