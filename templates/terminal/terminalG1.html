@@ -21,11 +21,15 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
         <form action="" id="input" method="POST">
             <label for="commandInputId" style="color:lime">T:\Green\G1></label>
-            <input name="commandInput" id="commandInputId" type="text" class="input-box bg-dark" style="color:lime">
+            <input name="commandInput" id="commandInputId" type="text" class="input-box bg-dark" style="color:lime" autocomplete="off">
         </form>
 
-        <div class="col-12">
-            <p style="color:lime">{{ commandOutput }}</p>
+        <div>
+            <br>
+            <h6 style="color:lime">{{ commandOutput1 }}</h6>
+            <h6 style="color:lime">{{ commandOutput2 }}ㅤ</h6>
+            <h6 style="color:lime">{{ commandOutput3 }}ㅤ</h6>
+            <h6 style="color:lime">{{ commandOutput4 }}ㅤ</h6>
         </div>
     </div>
 
@@ -33,10 +37,15 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         <h5>README.txt</h5>
         <p>Hello Agent G1. Your task is to secure this terminal and prevent information leaks. At the same time, if you can find any information from competitors, don't be afraid to snoop around and record anything you find.</p>
         <p> In case you forget how to operate this terminal, a list of commands has been provided below. Good luck.</p>
+        <br>
         <h6>echo - Tests terminal functionality.</h6>
-        <h6>viewport - Lists out the terminal ports.</h6>
-        <h6>viewport [port] - Displays information about the port.</h6>
+        <br>
+        <h6>viewport - Lists out available terminals and port information.</h6>
         <h6>connect [port] - Attempts to connect to the port.</h6>
+        <br>
+        <h6>scan - Displays files within the system.</h6>
+        <h6>display [filename] - Reads the requested file.</h6>
+        <h6>run [filename] - Executes the requested file.</h6>
     </div>
 
 </body>

@@ -46,7 +46,7 @@ def blackscreen():
 
 # @app.route('/games/terminal/')
 # def terminal():
-#     return render_template("terminal.html")
+#     return render_template("terminal_illness.html")
 
 
 @app.route('/aboutAidan/', methods=['GET', 'POST'])
@@ -249,33 +249,51 @@ def rgb():
 
 
 
-
-@app.route('/games/terminalG1', methods=['GET', 'POST'])
+@app.route('/games/terminal/terminalG1', methods=['GET', 'POST'])
 def terminalG1():
     # submit button has been pushed
     if request.form:
         commandInputPY = request.form.get("commandInput")
         if commandInputPY == "echo":  # input field has content
-            return render_template("/terminal/terminalG1.html", commandOutput=commandInputPY)
-        elif commandInputPY == "viewport":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="G1 G2 G3 G4")
-        elif commandInputPY == "viewport G1":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Online, Password Protected")
-        elif commandInputPY == "viewport G2":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Offline, Password Protected")
-        elif commandInputPY == "viewport G3":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Online")
-        elif commandInputPY == "viewport G4":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Status: Open, User: Offline")
-        elif commandInputPY == "connect G1":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="You are already connected.")
-        elif commandInputPY == "connect G2":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Unauthorized access.")
-        elif commandInputPY == "connect G3":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Current user online.")
-        elif commandInputPY == "connect G4":  # viewport
-            return render_template("/terminal/terminalG1.html", commandOutput="Connecting to G4...")
-    return render_template("/terminal/terminalG1.html", commandOutput="Unknown command.")
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1=commandInputPY,
+                                   commandOutput2=commandInputPY,
+                                   commandOutput3=commandInputPY,
+                                   commandOutput4=commandInputPY)
+        elif commandInputPY == "viewport":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="G1: Open, In Use",
+                                   commandOutput2="G2: Open",
+                                   commandOutput3="G3: Closed",
+                                   commandOutput4="G4: Closed")
+        elif commandInputPY == "connect G1":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="Connection Terminated:",
+                                   commandOutput2="Port In Use")
+        elif commandInputPY == "connect G2":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="ㅤ")
+        elif commandInputPY == "connect G3" or commandInputPY == "connect G4":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="Connection Terminated:",
+                                   commandOutput2="Request Timeout")
+        elif commandInputPY == "scan":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="2021-10-28 README.txt")
+        elif commandInputPY == "display README.txt":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="Hello Agent G1. Your task is to secure this terminal and prevent information leaks.",
+                                   commandOutput2="At the same time, if you can find any information from competitors, don't be afraid to snoop around and record anything you find.",
+                                   commandOutput3="In case you forget how to operate this terminal, a list of commands has been provided below. Good luck.",
+                                   commandOutput4="echo - Tests terminal functionality.")
+        elif commandInputPY == "run README.txt":
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="Error: Non-executable File")
+        else:
+            return render_template("/terminal/terminalG1.html",
+                                   commandOutput1="Unknown command.")
+    return render_template("/terminal/terminalG1.html",
+                           commandOutput1="Awaiting Input...")
 
 
 
