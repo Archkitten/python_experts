@@ -263,12 +263,12 @@ def terminal():
             # ECHO
             if commandInputPY == "echo":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="G1: [--Open--|-Secure-|-Online-]",
                                        commandOutput2="G2: [--Open--|--------|--------]",
                                        commandOutput3="G3: [-Closed-|-Secure-|--------]",
@@ -276,38 +276,37 @@ def terminal():
             # CONNECT
             elif commandInputPY == "connect G1" or commandInputPY == "connect G1 qwerty":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Port Already In Use")
             elif commandInputPY == "connect G2":
                 currentTerminalPY = 2
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
             elif commandInputPY == "connect G3":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Unauthorized Access")
             elif commandInputPY == "connect G4 Eve4px":
                 currentTerminalPY = 4
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Connection Successful")
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
-                                       today=datetime.today().strftime('%Y-%m-%d'),
+                                       currentTerminal="T:/Green/G1>", color="lime", today=datetime.today().strftime('%Y-%m-%d'),
                                        commandOutput1="README.txt")
             # RUN
             elif commandInputPY == "run README.txt":
                 return render_template("/terminal/readme.html")
             # UNKNOWN
             return render_template("terminal.html",
-                                   currentTerminal="T:/Green/G1>",
+                                   currentTerminal="T:/Green/G1>", color="lime",
                                    commandOutput1="Error")
 
         # ----- TERMINAL Q2 -----
@@ -315,12 +314,12 @@ def terminal():
             # ECHO
             if commandInputPY == "echo":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="G1: [--Open--|-Secure-|--------]",
                                        commandOutput2="G2: [--Open--|--------|-Online-]",
                                        commandOutput3="G3: [-Closed-|-Secure-|--------]",
@@ -328,44 +327,47 @@ def terminal():
             # CONNECT
             elif commandInputPY == "connect G1":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Unauthorized Access")
             elif commandInputPY == "connect G1 qwerty":
                 currentTerminalPY = 1
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Connection Successful")
             elif commandInputPY == "connect G2":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Port Already In Use")
             elif commandInputPY == "connect G3":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Unauthorized Access")
             elif commandInputPY == "connect G4 Eve4px":
                 currentTerminalPY = 4
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Connection Successful")
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
-                                       commandOutput1="2019-04-16 rickroll.mp3",
-                                       commandOutput2="2019-04-17 passwords.txt")
+                                       currentTerminal="T:/Green/G2>", color="lime",
+                                       commandOutput1="2019-04-17 passwords.txt",
+                                       commandOutput2="2019-04-16 rickroll.mp3",
+                                       commandOutput3="2019-04-01 mediaplayer.exe")
             # RUN
-            elif commandInputPY == "run rickroll.mp3":
-                return render_template("/terminal/rickroll.html")
             elif commandInputPY == "run passwords.txt":
                 return render_template("/terminal/passwords.html")
+            elif commandInputPY == "run rickroll.mp3":
+                return render_template("/terminal/rickroll.html")
+            elif commandInputPY == "run mediaplayer.exe":
+                return render_template("/terminal/mediaplayer.html")
             # UNKNOWN
             return render_template("terminal.html",
-                                   currentTerminal="T:/Green/G2>",
+                                   currentTerminal="T:/Green/G2>", color="lime",
                                    commandOutput1="Error")
 
         # ----- TERMINAL Q4 -----
@@ -373,12 +375,12 @@ def terminal():
             # ECHO
             if commandInputPY == "echo":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="G1: [--Open--|-Secure-|--------]",
                                        commandOutput2="G2: [--Open--|--------|--------]",
                                        commandOutput3="G3: [-Closed-|-Secure-|--------]",
@@ -386,47 +388,49 @@ def terminal():
             # CONNECT
             elif commandInputPY == "connect G1":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Unauthorized Access")
             elif commandInputPY == "connect G1 qwerty":
                 currentTerminalPY = 1
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>",
+                                       currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Connection Successful")
             elif commandInputPY == "connect G2":
                 currentTerminalPY = 2
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>",
+                                       currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
             elif commandInputPY == "connect G3":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4" or commandInputPY == "connect G4 Eve4px":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
+                                       currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Port Already In Use")
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>",
-                                       commandOutput1="2019-01-01 jack.exe")
+                                       currentTerminal="T:/Green/G4>", color="lime",
+                                       commandOutput1="2019-04-17 jack_r.exe")
             # RUN
-            elif commandInputPY == "run jack.exe":
-                return render_template("/terminal/jack.html")
+            elif commandInputPY == "run jack_r.exe":
+                currentTerminalPY = 8
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Connection Successful")
             # UNKNOWN
             return render_template("terminal.html",
-                                   currentTerminal="T:/Green/G4>",
+                                   currentTerminal="T:/Green/G4>", color="lime",
                                    commandOutput1="Error")
 
     # --------- STARTUP ---------
     currentTerminalPY = 1
     return render_template("terminal.html",
-                           currentTerminal="T:/Green/G1>",
+                           currentTerminal="T:/Green/G1>", color="lime",
                            commandOutput1="Awaiting Input...")
 
 # ------------------------------------ End Of Terminal ------------------------------------
-
 
 
 
