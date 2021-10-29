@@ -299,9 +299,12 @@ def terminal():
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>", color="lime", today=datetime.today().strftime('%Y-%m-%d'),
-                                       commandOutput1="README.txt")
+                                       currentTerminal="T:/Green/G1>", color="lime",
+                                       commandOutput1="audit_log.txt", today1=datetime.today().strftime('%Y-%m-%d'),
+                                       commandOutput2="README.txt", today2=datetime.today().strftime('%Y-%m-%d'))
             # RUN
+            elif commandInputPY == "run audit_log.txt":
+                return render_template("/terminal/audit_log1.html")
             elif commandInputPY == "run README.txt":
                 return render_template("/terminal/readme.html")
             # UNKNOWN
@@ -355,16 +358,16 @@ def terminal():
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
-                                       commandOutput1="2019-04-17 passwords.txt",
-                                       commandOutput2="2019-04-16 rickroll.mp3",
-                                       commandOutput3="2019-04-01 mediaplayer.exe")
+                                       commandOutput1="2019-04-01 mediaplayer.exe",
+                                       commandOutput2="2019-04-17 passwords.txt",
+                                       commandOutput3="2019-04-16 rickroll.mp3")
             # RUN
+            elif commandInputPY == "run mediaplayer.exe":
+                return render_template("/terminal/mediaplayer.html")
             elif commandInputPY == "run passwords.txt":
                 return render_template("/terminal/passwords.html")
             elif commandInputPY == "run rickroll.mp3":
                 return render_template("/terminal/rickroll.html")
-            elif commandInputPY == "run mediaplayer.exe":
-                return render_template("/terminal/mediaplayer.html")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G2>", color="lime",
@@ -412,9 +415,9 @@ def terminal():
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
-                                       commandOutput1="2019-04-17 jack_r.exe")
+                                       commandOutput1="2019-04-17 jack.exe")
             # RUN
-            elif commandInputPY == "run jack_r.exe":
+            elif commandInputPY == "run jack.exe":
                 currentTerminalPY = 8
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R4>", color="red",
@@ -422,6 +425,55 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G4>", color="lime",
+                                   commandOutput1="Error")
+
+        # ----- TERMINAL R4 -----
+        if currentTerminalPY == 8:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1=commandInputPY)
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="R1: [--Open--|-Secure-|-Online-]",
+                                       commandOutput2="R2: [--Open--|-Secure-|-Online-]",
+                                       commandOutput3="R3: [--Open--|-Secure-|--------]",
+                                       commandOutput4="R4: [--Open--|-Secure-|-Online-]")
+            # CONNECT
+            elif commandInputPY == "connect R1":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect R2":
+                currentTerminalPY = 2
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect R3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Unauthorized Authentication")
+            elif commandInputPY == "connect R4":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Port Already In Use")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="2019-04-17 jack.exe")
+            # RUN
+            elif commandInputPY == "run jack.exe":
+                currentTerminalPY = 4
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G4>", color="lime",
+                                       commandOutput1="Connection Successful")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Red/R4>", color="red",
                                    commandOutput1="Error")
 
     # --------- STARTUP ---------
