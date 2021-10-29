@@ -247,95 +247,106 @@ def rgb():
 
 
 
-# Terminal G1, Step 1.
+# ------------------------------------ Terminal ------------------------------------
 
 @app.route('/games/terminal/', methods=['GET', 'POST'])
-def terminalG1():
+def terminal():
+    global currentTerminalPY
+
     # submit button has been pushed
     if request.form:
         commandInputPY = request.form.get("commandInput")
-        if commandInputPY == "echo":  # input field has content
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1=commandInputPY)
-        elif commandInputPY == "viewport":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="G1: Open, Password Protected, In Use",
-                                   commandOutput2="G2: Open",
-                                   commandOutput3="G3: Closed, Password Protected",
-                                   commandOutput4="G4: Open, Password Protected")
-        elif commandInputPY == "connect G1":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="Connection Terminated:",
-                                   commandOutput2="Port In Use")
-        elif commandInputPY == "connect G2":
-            return render_template("/terminal/terminalG2.html")
-        elif commandInputPY == "connect G3" or commandInputPY == "connect G4":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="Connection Terminated:",
-                                   commandOutput2="Request Timeout")
-        elif commandInputPY == "scan":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="2021-10-28 README.txt")
-        elif commandInputPY == "display README.txt":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="Hello Agent G1. Your task is to secure this terminal and prevent information leaks.",
-                                   commandOutput2="At the same time, if you can find any information from competitors, don't be afraid to snoop around and record anything you find.",
-                                   commandOutput3="In case you forget how to operate this terminal, a list of commands has been provided below. Good luck.",
-                                   commandOutput4='P.S. Your password is "password". Keep it secure.')
-        elif commandInputPY == "run README.txt":
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="Error: Non-executable File")
-        else:
-            return render_template("/terminal/terminalG1.html",
-                                   commandOutput1="Unknown command.")
-    return render_template("/terminal/terminalG1.html",
+
+        # ----- TERMINAL Q1 -----
+        if currentTerminalPY == 1:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>",
+                                       commandOutput1=commandInputPY)
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>",
+                                       commandOutput1="G1: [--Open--|-Secure-|-Online-]",
+                                       commandOutput2="G2: [--Open--|--------|--------]",
+                                       commandOutput3="G3: [-Closed-|-Secure-|--------]",
+                                       commandOutput4="G4: [--Open--|-Secure-|--------]")
+            # CONNECT
+            elif commandInputPY == "connect G1" or commandInputPY == "connect G1 password":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect G2":
+                currentTerminalPY = 2
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1="Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>",
+                                       commandOutput1="2021-10-28 README.txt")
+            # RUN
+            elif commandInputPY == "run README.txt":
+                return render_template("/terminal/readme.html")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Green/G1>",
+                                   commandOutput1="Error")
+
+        # ----- TERMINAL Q2 -----
+        elif currentTerminalPY == 2:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1=commandInputPY)
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1="G1: [--Open--|-Secure-|--------]",
+                                       commandOutput2="G2: [--Open--|--------|-Online-]",
+                                       commandOutput3="G3: [-Closed-|-Secure-|--------]",
+                                       commandOutput4="G4: [--Open--|-Secure-|--------]")
+            # CONNECT
+            elif commandInputPY == "connect G1":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect G1 password":
+                currentTerminalPY = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>",
+                                       commandOutput1="Connection Successful")
+            elif commandInputPY == "connect G2":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1="Port Already In Use")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>",
+                                       commandOutput1="2019-04-16 rickroll.mp3",
+                                       commandOutput2="2019-04-17 passwords.txt")
+            # RUN
+            elif commandInputPY == "run rickroll.mp3":
+                return render_template("/terminal/rickroll.html")
+            elif commandInputPY == "run passwords.txt":
+                return render_template("/terminal/passwords.html")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Green/G2>",
+                                   commandOutput1="Error")
+
+    # --------- STARTUP ---------
+    currentTerminalPY = 1
+    return render_template("terminal.html",
+                           currentTerminal="T:/Green/G1>",
                            commandOutput1="Awaiting Input...")
 
-# Terminal G2, Step 2.
-
-@app.route('/games/terminal/terminalG2/', methods=['GET', 'POST'])
-def terminalG2():
-    # submit button has been pushed
-    if request.form:
-        commandInputPY = request.form.get("commandInput")
-        if commandInputPY == "echo":  # input field has content
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1=commandInputPY)
-        elif commandInputPY == "viewport":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="G1: Open, Password Protected",
-                                   commandOutput2="G2: Open, In Use",
-                                   commandOutput3="G3: Closed",
-                                   commandOutput4="G4: Open, Password Protected")
-        elif commandInputPY == "connect G1":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="Connection Terminated:",
-                                   commandOutput2="Port In Use")
-        elif commandInputPY == "connect G2":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="ㅤ")
-        elif commandInputPY == "connect G3" or commandInputPY == "connect G4":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="Connection Terminated:",
-                                   commandOutput2="Request Timeout")
-        elif commandInputPY == "scan":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="2019-04-17 passwords.txt",
-                                   commandOutput2="2019-04-21 rickroll.mp3")
-        elif commandInputPY == "display passwords.txt":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="password",
-                                   commandOutput2="N/A",
-                                   commandOutput3="yP4x23k",
-                                   commandOutput4="f2Q12d")
-        elif commandInputPY == "run README.txt":
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="Error: Non-executable File")
-        else:
-            return render_template("/terminal/terminalG2.html",
-                                   commandOutput1="Unknown command.")
-    return render_template("/terminal/terminalG2.html",
-                           commandOutput1="Awaiting Input...")
+# ------------------------------------ End Of Terminal ------------------------------------
 
 
 
