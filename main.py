@@ -448,7 +448,6 @@ def terminal():
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Port Already In Use")
             elif commandInputPY == "connect R2":
-                currentTerminalPY = 2
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Port Already In Use")
