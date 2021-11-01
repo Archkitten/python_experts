@@ -284,7 +284,7 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
-            elif commandInputPY == "connect G3":
+            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Request Timeout")
@@ -310,7 +310,7 @@ def terminal():
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
-                                       commandOutput1="README.txt", today2=datetime.today().strftime('%Y-%m-%d'))
+                                       commandOutput1="README.txt", today1=datetime.today().strftime('%Y-%m-%d'))
             elif commandInputPY == "scan hidden":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
@@ -355,7 +355,7 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Port Already In Use")
-            elif commandInputPY == "connect G3":
+            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Request Timeout")
@@ -435,7 +435,7 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
-            elif commandInputPY == "connect G3":
+            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Request Timeout")
@@ -551,8 +551,7 @@ def terminal():
             elif commandInputPY == "run pass_crack.cmd":
                 redPasswordsDisabled = 1
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Red/R4>", color="red",
-                                       commandOutput1="2019-04-17 jack.exe")
+                                       currentTerminal="T:/Red/R4>", color="red")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R4>", color="red",
