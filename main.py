@@ -288,6 +288,15 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="Request Timeout")
+            elif commandInputPY == "power connect G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>", color="lime",
+                                       commandOutput1="Power On: Unauthorized Access")
+            elif commandInputPY == "power connect G3 Pr3vuw":
+                currentTerminalPY = 3
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G3>", color="lime",
+                                       commandOutput1="Power On: Connection Successful")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
@@ -299,6 +308,10 @@ def terminal():
                                        commandOutput1="Connection Successful")
             # SCAN
             elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>", color="lime",
+                                       commandOutput1="README.txt", today2=datetime.today().strftime('%Y-%m-%d'))
+            elif commandInputPY == "scan hidden":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
                                        commandOutput1="audit_log.txt", today1=datetime.today().strftime('%Y-%m-%d'),
@@ -346,6 +359,15 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Request Timeout")
+            elif commandInputPY == "power connect G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>", color="lime",
+                                       commandOutput1="Power On: Unauthorized Access")
+            elif commandInputPY == "power connect G3 Pr3vuw":
+                currentTerminalPY = 3
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G3>", color="lime",
+                                       commandOutput1="Power On: Connection Successful")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
@@ -362,6 +384,13 @@ def terminal():
                                        commandOutput1="2019-04-01 mediaplayer.exe",
                                        commandOutput2="2019-04-17 passwords.txt",
                                        commandOutput3="2019-04-16 rickroll.mp3")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>", color="lime",
+                                       commandOutput1="2019-04-01 mediaplayer.exe",
+                                       commandOutput2="2019-04-17 passwords.txt",
+                                       commandOutput3="2019-04-16 rickroll.mp3",
+                                       commandOutput4="2019-04-17 zzz.txt")
             # RUN
             elif commandInputPY == "run mediaplayer.exe":
                 return render_template("/terminal/mediaplayer.html")
@@ -369,6 +398,8 @@ def terminal():
                 return render_template("/terminal/passwords.html")
             elif commandInputPY == "run rickroll.mp3":
                 return render_template("/terminal/rickroll.html")
+            elif commandInputPY == "run zzz.txt":
+                return render_template("/terminal/zzz.html")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G2>", color="lime",
@@ -408,12 +439,21 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Request Timeout")
+            elif commandInputPY == "power connect G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G4>", color="lime",
+                                       commandOutput1="Power On: Unauthorized Access")
+            elif commandInputPY == "power connect G3 Pr3vuw":
+                currentTerminalPY = 3
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G3>", color="lime",
+                                       commandOutput1="Power On: Connection Successful")
             elif commandInputPY == "connect G4" or commandInputPY == "connect G4 Eve4px":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Port Already In Use")
             # SCAN
-            elif commandInputPY == "scan":
+            elif commandInputPY == "scan" or commandInputPY == "scan hidden":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="2019-04-17 jack.exe")
@@ -485,7 +525,24 @@ def terminal():
                     return render_template("terminal.html",
                                            currentTerminal="T:/Red/R4>", color="red",
                                            commandOutput1="2019-04-17 jack.exe")
+            elif commandInputPY == "scan hidden":
+                if redPasswordsDisabled == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="2018-12-25 hi.exe",
+                                           commandOutput2="2019-04-17 jack.exe",
+                                           commandOutput3="2019-04-17 pass_crack.cmd")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="2018-12-25 hi.exe",
+                                           commandOutput2="2019-04-17 jack.exe")
             # RUN
+            elif commandInputPY == "run hi.exe":
+                currentTerminalPY = 12
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Blue/B4>", color="blue",
+                                       commandOutput1="Connection Successful")
             elif commandInputPY == "run jack.exe":
                 currentTerminalPY = 4
                 return render_template("terminal.html",
@@ -535,13 +592,13 @@ def terminal():
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Connection Successful")
             # SCAN
-            elif commandInputPY == "scan":
+            elif commandInputPY == "scan" or commandInputPY == "scan hidden":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R3>", color="red",
-                                       commandOutput1="2016-12-25 note.txt")
+                                       commandOutput1="2018-12-25 draft1.txt")
             # RUN
-            elif commandInputPY == "run note.txt":
-                return render_template("/terminal/note.html")
+            elif commandInputPY == "run draft1.txt":
+                return render_template("/terminal/draft1.html")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R3>", color="red",
