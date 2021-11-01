@@ -253,6 +253,7 @@ def rgb():
 @app.route('/games/terminal/', methods=['GET', 'POST'])
 def terminal():
     global currentTerminalPY
+    global greenThreeOpen
     global redPasswordsDisabled
 
     # submit button has been pushed
@@ -268,12 +269,20 @@ def terminal():
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>", color="lime",
-                                       commandOutput1="G1: [--Open--|-Secure-|-Online-]",
-                                       commandOutput2="G2: [--Open--|--------|--------]",
-                                       commandOutput3="G3: [-Closed-|-Secure-|--------]",
-                                       commandOutput4="G4: [--Open--|-Secure-|--------]")
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|-Online-]",
+                                           commandOutput2="G2: [--Open--|--------|--------]",
+                                           commandOutput3="G3: [-Closed-|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|--------]")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|-Online-]",
+                                           commandOutput2="G2: [--Open--|--------|--------]",
+                                           commandOutput3="G3: [--Open--|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|--------]")
             # CONNECT
             elif commandInputPY == "connect G1" or commandInputPY == "connect G1 qwerty":
                 return render_template("terminal.html",
@@ -284,19 +293,25 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
-            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>", color="lime",
-                                       commandOutput1="Request Timeout")
-            elif commandInputPY == "power connect G3":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>", color="lime",
-                                       commandOutput1="Power On: Unauthorized Access")
-            elif commandInputPY == "power connect G3 Pr3vuw":
-                currentTerminalPY = 3
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G3>", color="lime",
-                                       commandOutput1="Power On: Connection Successful")
+            elif commandInputPY == "connect G3":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect G3 Pr3vuw":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    currentTerminalPY = 3
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G3>", color="lime",
+                                           commandOutput1="Connection Successful")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
@@ -321,6 +336,16 @@ def terminal():
                 return render_template("/terminal/audit_log1.html")
             elif commandInputPY == "run README.txt":
                 return render_template("/terminal/readme.html")
+            # POWER ON
+            elif commandInputPY == "power on G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>", color="lime",
+                                       commandOutput1="Unauthorized Command")
+            elif commandInputPY == "power on G3 Pr3vuw":
+                greenThreeOpen = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>", color="lime",
+                                       commandOutput1="G3 state changed from down to up")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G1>", color="lime",
@@ -335,12 +360,20 @@ def terminal():
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>", color="lime",
-                                       commandOutput1="G1: [--Open--|-Secure-|--------]",
-                                       commandOutput2="G2: [--Open--|--------|-Online-]",
-                                       commandOutput3="G3: [-Closed-|-Secure-|--------]",
-                                       commandOutput4="G4: [--Open--|-Secure-|--------]")
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|--------]",
+                                           commandOutput2="G2: [--Open--|--------|-Online-]",
+                                           commandOutput3="G3: [-Closed-|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|--------]")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|--------]",
+                                           commandOutput2="G2: [--Open--|--------|-Online-]",
+                                           commandOutput3="G3: [--Open--|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|--------]")
             # CONNECT
             elif commandInputPY == "connect G1":
                 return render_template("terminal.html",
@@ -355,19 +388,25 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Port Already In Use")
-            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>", color="lime",
-                                       commandOutput1="Request Timeout")
-            elif commandInputPY == "power connect G3":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G2>", color="lime",
-                                       commandOutput1="Power On: Unauthorized Access")
-            elif commandInputPY == "power connect G3 Pr3vuw":
-                currentTerminalPY = 3
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G3>", color="lime",
-                                       commandOutput1="Power On: Connection Successful")
+            elif commandInputPY == "connect G3":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect G3 Pr3vuw":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    currentTerminalPY = 3
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G3>", color="lime",
+                                           commandOutput1="Connection Successful")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
@@ -400,6 +439,16 @@ def terminal():
                 return render_template("/terminal/rickroll.html")
             elif commandInputPY == "run zzz.txt":
                 return render_template("/terminal/zzz.html")
+            # POWER ON
+            elif commandInputPY == "power on G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>", color="lime",
+                                       commandOutput1="Unauthorized Command")
+            elif commandInputPY == "power on G3 Pr3vuw":
+                greenThreeOpen = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G2>", color="lime",
+                                       commandOutput1="G3 state changed from down to up")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G2>", color="lime",
@@ -414,12 +463,20 @@ def terminal():
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>", color="lime",
-                                       commandOutput1="G1: [--Open--|-Secure-|--------]",
-                                       commandOutput2="G2: [--Open--|--------|--------]",
-                                       commandOutput3="G3: [-Closed-|-Secure-|--------]",
-                                       commandOutput4="G4: [--Open--|-Secure-|-Online-]")
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|--------]",
+                                           commandOutput2="G2: [--Open--|--------|--------]",
+                                           commandOutput3="G3: [-Closed-|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|-Online-]")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="G1: [--Open--|-Secure-|--------]",
+                                           commandOutput2="G2: [--Open--|--------|--------]",
+                                           commandOutput3="G3: [--Open--|-Secure-|--------]",
+                                           commandOutput4="G4: [--Open--|-Secure-|-Online-]")
             # CONNECT
             elif commandInputPY == "connect G1":
                 return render_template("terminal.html",
@@ -435,19 +492,25 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
                                        commandOutput1="Connection Successful")
-            elif commandInputPY == "connect G3" or commandInputPY == "connect G3 Pr3vuw":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>", color="lime",
-                                       commandOutput1="Request Timeout")
-            elif commandInputPY == "power connect G3":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G4>", color="lime",
-                                       commandOutput1="Power On: Unauthorized Access")
-            elif commandInputPY == "power connect G3 Pr3vuw":
-                currentTerminalPY = 3
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G3>", color="lime",
-                                       commandOutput1="Power On: Connection Successful")
+            elif commandInputPY == "connect G3":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G4>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G4>", color="lime",
+                                           commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect G3 Pr3vuw":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G4>", color="lime",
+                                           commandOutput1="Request Timeout")
+                else:
+                    currentTerminalPY = 3
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G3>", color="lime",
+                                           commandOutput1="Connection Successful")
             elif commandInputPY == "connect G4" or commandInputPY == "connect G4 Eve4px":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
@@ -463,6 +526,16 @@ def terminal():
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Connection Successful")
+            # POWER ON
+            elif commandInputPY == "power on G3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G4>", color="lime",
+                                       commandOutput1="Unauthorized Command")
+            elif commandInputPY == "power on G3 Pr3vuw":
+                greenThreeOpen = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G4>", color="lime",
+                                       commandOutput1="G3 state changed from down to up")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G4>", color="lime",
@@ -605,6 +678,7 @@ def terminal():
 
     # --------- STARTUP ---------
     currentTerminalPY = 1
+    greenThreeOpen = 0
     redPasswordsDisabled = 0
     return render_template("terminal.html",
                            currentTerminal="T:/Green/G1>", color="lime",
