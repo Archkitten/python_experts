@@ -23,9 +23,11 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <!- Try building a new body here ->
 <h1><strong>Tic Tac Toe</strong></h1>
 <h4 style="color:FireBrick;">Welcome to the Playground!</h4>
-<p>Classic Tic Tac Toe!</p>
+<p style="color:white">Classic Tic Tac Toe!</p>
+
 <body>
 
+<style>
 
 <!DOCTYPE html>
 
@@ -96,7 +98,57 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <p id="print"></p>
 
 
+    #console {
+        padding: 3vw;
+    }
+    #console,
+    #panel {
+        margin: auto;
+    }
+
+    #panel {
+        width: clamp(400px, 5vw, 400px);
+        height: clamp(400px, 5vw, 400px);
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+    .grid {
+        border: solid 2px #00F;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 50px;
+        user-select: none;
+        font-weight: 400;
+    }
+</style>
+<div id="console">
+    <div id="panel">
+        <div class="grid" id="0"></div>
+        <div class="grid" id="1"></div>
+        <div class="grid" id="2"></div>
+        <div class="grid" id="3"></div>
+        <div class="grid" id="4"></div>
+        <div class="grid" id="5"></div>
+        <div class="grid" id="6"></div>
+        <div class="grid" id="7"></div>
+        <div class="grid" id="8"></div>
+    </div>
 </div>
+<script>
+    var playMarks, winLines, playCount, nextPlayer;
+    var initGame = (reload, winner) => {playMarks = Array(9).fill(null), winLines = [[0, 1, 2],[2,5,8],[6,7,8],[0, 3, 6],[3, 4, 5],[1, 4, 7],[0, 4, 8],[2, 4, 6]], playCount = 0, nextPlayer = localStorage.getItem('nextPlayer') || 'X';
+        ['X','O'].includes(winner) ? (alert(`Player ${winner} wins!`), location.reload()) : reload ? (alert('Players draw.'), location.reload()) : null;}
+    var getWinner = (playerLabel) => winLines.some((winLine) => winLine.every((index) => playMarks[index] == playerLabel));
+    document.querySelectorAll('.grid').forEach((grid, index) => {
+        grid.addEventListener('click', (e) => {
+            if (!grid.innerText) { grid.innerText = nextPlayer; playMarks[grid.id] = nextPlayer;
+                if (getWinner('X') || getWinner('O')) initGame(true, nextPlayer);
+                if(++playCount == 9) initGame(true); nextPlayer = nextPlayer == 'X' ? 'O' : 'X'; localStorage.setItem('nextPlayer', nextPlayer);}});});
+    initGame();
+</script>
 </body>
 
 </html>
