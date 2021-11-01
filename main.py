@@ -253,6 +253,7 @@ def rgb():
 @app.route('/games/terminal/', methods=['GET', 'POST'])
 def terminal():
     global currentTerminalPY
+    global redPasswordsDisabled
 
     # submit button has been pushed
     if request.form:
@@ -436,12 +437,20 @@ def terminal():
                                        commandOutput1=commandInputPY)
             # VIEWPORT
             elif commandInputPY == "viewport":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Red/R4>", color="red",
-                                       commandOutput1="R1: [--Open--|-Secure-|-Online-]",
-                                       commandOutput2="R2: [--Open--|-Secure-|-Online-]",
-                                       commandOutput3="R3: [--Open--|-Secure-|--------]",
-                                       commandOutput4="R4: [--Open--|-Secure-|-Online-]")
+                if redPasswordsDisabled == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="R1: [--Open--|-Secure-|-Online-]",
+                                           commandOutput2="R2: [--Open--|-Secure-|-Online-]",
+                                           commandOutput3="R3: [--Open--|-Secure-|--------]",
+                                           commandOutput4="R4: [--Open--|-Secure-|-Online-]")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="R1: [--Open--|--------|-Online-]",
+                                           commandOutput2="R2: [--Open--|--------|-Online-]",
+                                           commandOutput3="R3: [--Open--|--------|--------]",
+                                           commandOutput4="R4: [--Open--|--------|-Online-]")
             # CONNECT
             elif commandInputPY == "connect R1":
                 return render_template("terminal.html",
@@ -452,31 +461,95 @@ def terminal():
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Port Already In Use")
             elif commandInputPY == "connect R3":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Red/R4>", color="red",
-                                       commandOutput1="Unauthorized Authentication")
+                if redPasswordsDisabled == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="Unauthorized Access")
+                else:
+                    currentTerminalPY = 7
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R3>", color="red",
+                                           commandOutput1="Connection Successful")
             elif commandInputPY == "connect R4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Port Already In Use")
             # SCAN
             elif commandInputPY == "scan":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Red/R4>", color="red",
-                                       commandOutput1="2019-04-17 jack.exe")
+                if redPasswordsDisabled == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="2019-04-17 jack.exe",
+                                           commandOutput2="2019-04-17 pass_crack.cmd")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Red/R4>", color="red",
+                                           commandOutput1="2019-04-17 jack.exe")
             # RUN
             elif commandInputPY == "run jack.exe":
                 currentTerminalPY = 4
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
                                        commandOutput1="Connection Successful")
+            elif commandInputPY == "run pass_crack.cmd":
+                redPasswordsDisabled = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="2019-04-17 jack.exe")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R4>", color="red",
                                    commandOutput1="Error")
 
+        # ----- TERMINAL R3 -----
+        if currentTerminalPY == 7:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1=commandInputPY)
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1="R1: [--Open--|--------|-Online-]",
+                                       commandOutput2="R2: [--Open--|--------|-Online-]",
+                                       commandOutput3="R3: [--Open--|--------|-Online-]",
+                                       commandOutput4="R4: [--Open--|--------|--------]")
+            # CONNECT
+            elif commandInputPY == "connect R1":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect R2":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect R3":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect R4":
+                currentTerminalPY = 8
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R4>", color="red",
+                                       commandOutput1="Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R3>", color="red",
+                                       commandOutput1="2016-12-25 note.txt")
+            # RUN
+            elif commandInputPY == "run note.txt":
+                return render_template("/terminal/note.html")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Red/R3>", color="red",
+                                   commandOutput1="Error")
+
     # --------- STARTUP ---------
     currentTerminalPY = 1
+    redPasswordsDisabled = 0
     return render_template("terminal.html",
                            currentTerminal="T:/Green/G1>", color="lime",
                            commandOutput1="Awaiting Input...")
