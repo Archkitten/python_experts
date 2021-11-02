@@ -16,14 +16,11 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <body>
 
 <div class="container p-3 my-3 bg-light text-black rounded">
-    <h5>zzz.txt</h5>
+    <h5>audit_log.txt</h5>
     <p>
-        The one who sleeps in<br>
-        The one that closes the door<br>
-        Must be awakened<br>
+        <script> document.write(new Date().toLocaleDateString()); </script> - State changed from down to up<br>
+        <script> document.write(new Date().toLocaleDateString()); </script> - Log in success<br>
     </p>
-    <h6>With</h6>
-    <h6>power on [port]</h6>
 </div>
 
 <div class="container p-3 my-3 bg-black text-light rounded">
