@@ -299,6 +299,19 @@ def gamesapi():
     return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=False)
 
 
+@app.route('/gamesapiquiz/', methods=['GET', 'POST'])
+def gamesapiquiz():
+    url = "https://free-to-play-games-database.p.rapidapi.com/api/games"
+    querystring = {"platform":"all","sort-by":"alphabetical"}
+    headers = {
+        'x-rapidapi-host': "free-to-play-games-database.p.rapidapi.com",
+        'x-rapidapi-key': "1d9c0e5dd4msh00cea2fa8d7699fp1dfecdjsn1cf8da6644a9"
+    }
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    data = json.loads(response.text)
+    return render_template("gamesapiquiz.html", games=data, i=random.randint(0,365))
+
+
 
 
 
