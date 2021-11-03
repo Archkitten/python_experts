@@ -1156,6 +1156,59 @@ def terminal():
                                    currentTerminal="T:/Blue/B4>", color="blue",
                                    commandOutput1="Error")
 
+        # ----- TERMINAL B5 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 13:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Blue/B5>", color="blue",
+                                       commandOutput1=commandInputPY)
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Blue/B5>", color="blue",
+                                       commandOutput1="--: [--------|--------|--------]",
+                                       commandOutput2="--: [--------|--------|--------]",
+                                       commandOutput3="--: [--------|--------|--------]",
+                                       commandOutput4="--: [--------|--------|--------]",
+                                       commandOutput5="B5: [--------|--------|-Online-]")
+            # CONNECT
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Blue/B5>", color="blue",
+                                       commandOutput1="XXXX-XX-XX hi.exe",
+                                       commandOutput2="XXXX-XX-XX hi.exe",
+                                       commandOutput3="XXXX-XX-XX hi.exe",
+                                       commandOutput4="XXXX-XX-XX hi.exe")
+            elif commandInputPY == "scan hidden":
+                if blueHiddenEnabled == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Blue/B5>", color="blue",
+                                           commandOutput1="Hidden files not enabled on this system")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Blue/B5>", color="blue",
+                                           commandOutput1="hi.bat", today1=datetime.today().strftime('%Y-%m-%d'),
+                                           commandOutput2="X�XX-�X-X□ hi.exe",
+                                           commandOutput3="XX□X-XX-XX hi.exe",
+                                           commandOutput4="X□XX-□X-�X hi.exe",
+                                           commandOutput5="XXX�-X�-XX hi.exe")
+            # RUN
+            elif commandInputPY == "run hi.exe":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Blue/B5>", color="blue",
+                                       commandOutput1="File Corrupted")
+            elif commandInputPY == "run hi.bat":
+                currentTerminalPY = 14
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Connection Successful")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Blue/B5>", color="blue",
+                                   commandOutput1="Error")
+
     # --------- STARTUP ---------
     currentTerminalPY = 1
     greenThreeOpen = 0
