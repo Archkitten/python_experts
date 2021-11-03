@@ -4,6 +4,10 @@ from flask import Flask, render_template, request
 from image import image_data
 from pathlib import \
     Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+import http.client
+import requests
+import json
+import random
 
 # create a Flask instance
 app = Flask(__name__)
@@ -234,7 +238,65 @@ def rgb():
     return render_template('minilab/rgb.html', images=image_data(path, None, web))
 
 
-
+@app.route('/gamesapi/', methods=['GET', 'POST'])
+def gamesapi():
+    url = "https://free-to-play-games-database.p.rapidapi.com/api/games"
+    querystring = {"platform":"all","sort-by":"alphabetical"}
+    headers = {
+        'x-rapidapi-host': "free-to-play-games-database.p.rapidapi.com",
+        'x-rapidapi-key': "1d9c0e5dd4msh00cea2fa8d7699fp1dfecdjsn1cf8da6644a9"
+    }
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    data = json.loads(response.text)
+    if request.form:
+        platform = request.form.get("platform")
+        category = request.form.get("category")
+        if platform == "all" and category == "all":
+            querystring = {"platform":"all","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=False)
+        elif platform == "all" and category == "shooter":
+            querystring = {"platform":"all","category":"shooter","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+        elif platform == "all" and category == "strategy":
+            querystring = {"platform":"all","category":"strategy","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+        elif platform == "browser" and category == "all":
+            querystring = {"platform":"browser","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=False)
+        elif platform == "browser" and category == "shooter":
+            querystring = {"platform":"browser","category":"shooter","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+        elif platform == "browser" and category == "strategy":
+            querystring = {"platform":"browser","category":"strategy","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+        elif platform == "pc" and category == "all":
+            querystring = {"platform":"pc","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=False)
+        elif platform == "pc" and category == "shooter":
+            querystring = {"platform":"pc","category":"shooter","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+        elif platform == "pc" and category == "strategy":
+            querystring = {"platform":"pc","category":"strategy","sort-by":"alphabetical"}
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = json.loads(response.text)
+            return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=True)
+    return render_template("f2pgames.html", games=data, length=len(data), query=querystring, category=False)
 
 
 
