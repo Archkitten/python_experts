@@ -718,16 +718,23 @@ def terminal():
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Connection Successful")
             # SCAN
-            elif commandInputPY == "scan" or commandInputPY == "scan hidden":
+            elif commandInputPY == "scan":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R1>", color="red",
-                                       commandOutput1="____t.exe", today1=datetime.today().strftime('%Y-%m-%d'))
+                                       commandOutput1="yijianmei.mp3", today1=datetime.today().strftime('%Y-%m-%d'))
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Red/R1>", color="red",
+                                       commandOutput1="____t.exe", today1=datetime.today().strftime('%Y-%m-%d'),
+                                       commandOutput2="yijianmei.mp3", today2=datetime.today().strftime('%Y-%m-%d'))
             # RUN
             elif commandInputPY == "run ____t.exe":
                 currentTerminalPY = 13
                 return render_template("terminal.html",
                                        currentTerminal="T:/Blue/B5>", color="blue",
                                        commandOutput1="Connection Successful")
+            elif commandInputPY == "run yijianmei.mp3":
+                return render_template("/terminal/yijianmei.html")
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R1>", color="red",
@@ -773,13 +780,10 @@ def terminal():
                                        currentTerminal="T:/Red/R4>", color="red",
                                        commandOutput1="Connection Successful")
             # SCAN
-            elif commandInputPY == "scan":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Red/R2>", color="red")
-            elif commandInputPY == "scan hidden":
+            elif commandInputPY == "scan" or commandInputPY == "scan hidden":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Red/R2>", color="red",
-                                       commandInputPY="yijianmei.mp3", today1=datetime.today().strftime('%Y-%m-%d'))
+                                       commandOutput1="yijianmei.mp3", today1=datetime.today().strftime('%Y-%m-%d'))
             # RUN
             elif commandInputPY == "run yijianmei.mp3":
                 return render_template("/terminal/yijianmei.html")
