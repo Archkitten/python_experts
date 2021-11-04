@@ -16,6 +16,13 @@
 ---------------
 
 ### Ideation
+
+Purpose:
+Playground / Interface for gaming: similar to cool math games or frivv. We wanted the user to enjoy playing our website while syhharing their experiences with their friends. We created this idea based off the nastolgia of our childood computer labs days ex: fire boy and water girl.
+
+How to run: 
+Becuase this is not our most recent version we would need a hotspot to remote connect to the raspberry pi in order to update it using this IP: **76.88.115.31:5000** . Currently, If you downloaded our repository, you would be able to run our website through an IDE such as IntellJ.
+
 Home: Contains the goal and purpose of the website. Also contains how you navigate the website.
 
 About Us: Greeting plus a little about us.
@@ -31,33 +38,33 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ## Individual Final Videos
 | Name | Evidence | Grade |
 | ---  | ---      | ---   |
-| Tyler Hickman | [Video](https://drive.google.com/file/d/1d1mFjmFwKx2wYbJUxOQ3T_I2FTGH8cjH/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/51) | -/8|
-| William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/50) | -/8 |
-| Arch Huang | [Video](https://drive.google.com/file/d/1dvsBRIPT3yJJUapbyUXYlXkdFJYdX67z/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/52) | -/8 |
-| David Xie | [Video](https://www.youtube.com/watch?v=D0eGNkz5wOo) + [Ticket](https://github.com/Archkitten/python_experts/issues/53) | -/8 |
-| Aidan Wu | [Video](https://drive.google.com/file/d/1SjWx5oSfoCKfbk6wVSblilE7w6UhlDtG/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/49) | -/8 |
+| Tyler Hickman | [Video](https://drive.google.com/file/d/1d1mFjmFwKx2wYbJUxOQ3T_I2FTGH8cjH/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/51) | 7.75/8|
+| William Wu | [Video](https://drive.google.com/file/d/1i6W9HqOuZososJowKqAM4I74mdzrX4j1/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/50) | 7.75/8 |
+| Arch Huang | [Video](https://drive.google.com/file/d/1dvsBRIPT3yJJUapbyUXYlXkdFJYdX67z/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/52) | 7.75/8 |
+| David Xie | [Video](https://www.youtube.com/watch?v=D0eGNkz5wOo) + [Ticket](https://github.com/Archkitten/python_experts/issues/53) | 7.25/8 |
+| Aidan Wu | [Video](https://drive.google.com/file/d/1SjWx5oSfoCKfbk6wVSblilE7w6UhlDtG/view?usp=sharing) + [Ticket](https://github.com/Archkitten/python_experts/issues/49) | 7.75/8 |
 
 ---
 
 ## Week 8 (Sprint 7,8 Week 8): Due 10/18
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Tyler Hickman | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
-| William Wu | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes <br> Tic Tac Toe |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket <br> [Ticket](https://github.com/Archkitten/python_experts/commit/18a9b8d80444e7355e9dc6f4cc8bb6828d23478f) <br> [Ticket2](https://github.com/Archkitten/python_experts/commit/5c4059dccdf416ec8025a4b89554293ee7a0fcff)| -/5<br>-/0.25<br>-3/3|
-| Arch Huang | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
-| David Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
-| Aidan Wu |PBL Tasks <br> TT7 (Extra credit) <br> 3.7, 3.8 Notes | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | -/5<br>-/0.25<br>-3/3|
+| Tyler Hickman | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 4.5/5<br>0.25/0.25<br>3/3|
+| William Wu | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes <br> Tic Tac Toe |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket <br> [Ticket](https://github.com/Archkitten/python_experts/commit/18a9b8d80444e7355e9dc6f4cc8bb6828d23478f) <br> [Ticket2](https://github.com/Archkitten/python_experts/commit/5c4059dccdf416ec8025a4b89554293ee7a0fcff)| 4.5/5<br>0.25/0.25<br>3/3|
+| Arch Huang | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 5/5<br>0.25/0.25<br>3/3|
+| David Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 4.5/5<br>0.25/0.25<br>3/3|
+| Aidan Wu |PBL Tasks <br> TT7 (Extra credit) <br> 3.7, 3.8 Notes | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 5/5<br>0.25/0.25<br>3/3|
 
 
 ## Week 7 (Sprint 7,8 Week 7): Due 10/8
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | [CSP Video 2](https://drive.google.com/file/d/1PmvHfI2occoS4Jj8se9TGaofdcS_NGAv/view?usp=sharing)
-| Tyler Hickman | Logic Gates <br> Color Code <br>  | [Ticket](https://github.com/Archkitten/python_experts/commit/65fe8c8d6d3c750aebe35f11767603080e240e0e) | -/6<br>-/2|
-| William Wu | Color Codes <br> Games Website |  [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/5e7583363f35d783bb2ca28b51208d270186285b) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/c075b80d09a869c92b9c515f01d3cb5ecc421e5e) | -/6<br>-/2 |
-| David Xie | Color Codes <br> Multiply & Divide by 2 | [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/fa8af4f08e97c239ee9676220b0be704deed785f)| -/6<br>-/2 | 
-| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode | [Commit](https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) <br> [Commit](https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| -/6<br>-/2 |
-| Aidan Wu | Signed Addition <br> Unsigned Addition | [Ticket](https://github.com/Archkitten/python_experts/commit/4d74271499438677aaf00af8a4fdd3ab0dd9796c) <br> [Ticket(1)](https://github.com/Archkitten/python_experts/commit/e1e1ba712cf835af9eb4ff5d341ad704d92a06b3) <br> [Ticket(2)](https://github.com/Archkitten/python_experts/commit/43105927cd3e46c9c559645af6508f639d54ee14) | -/6<br>-/2 |
+| Tyler Hickman | Logic Gates <br> Color Code <br>  | [Ticket](https://github.com/Archkitten/python_experts/commit/65fe8c8d6d3c750aebe35f11767603080e240e0e) | 6/6<br>2/2|
+| William Wu | Color Codes <br> Games Website |  [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/5e7583363f35d783bb2ca28b51208d270186285b) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/c075b80d09a869c92b9c515f01d3cb5ecc421e5e) | 6/6<br>2/2 |
+| David Xie | Color Codes <br> Multiply & Divide by 2 | [Ticket](https://github.com/Archkitten/python_experts/commit/bfcc2bd8fda3c2da5569fca2e7e27a1848214940) <br> [Ticket](https://github.com/Archkitten/python_experts/commit/fa8af4f08e97c239ee9676220b0be704deed785f)| 6/6<br>2/2 | 
+| Arch Huang | Signed Addition <br> Extend/Switch ASCII to Unicode | [Commit](https://github.com/Archkitten/python_experts/commit/7bf163398a562520febcf593892c4da3f8ea3e24) <br> [Commit](https://github.com/Archkitten/python_experts/commit/cb917e31e632998406b69826460694e3d6babfbd)| 6/6<br>2/2 |
+| Aidan Wu | Signed Addition <br> Unsigned Addition | [Ticket](https://github.com/Archkitten/python_experts/commit/4d74271499438677aaf00af8a4fdd3ab0dd9796c) <br> [Ticket(1)](https://github.com/Archkitten/python_experts/commit/e1e1ba712cf835af9eb4ff5d341ad704d92a06b3) <br> [Ticket(2)](https://github.com/Archkitten/python_experts/commit/43105927cd3e46c9c559645af6508f639d54ee14) | 6/6<br>2/2 |
 
 ---
 
@@ -66,7 +73,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 ### Modeling
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/26) <br>[Ticket](https://github.com/Archkitten/python_experts/issues/28) | Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
+| Tyler Hickman | Message Into Image  <br> Implement Image Possibilites  <br> Research Base 2, 8, 16, 64. | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/26) <br>[Ticket](https://github.com/Archkitten/python_experts/issues/28) | Journal: 3/3 <br> Individual: 1/1<br> Team: -/2 |
 | William Wu | Message Into Image <br>  Research Base 2, 8, 16, 64. <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | Aidan Wu | Grayscale Images<br> Big O Notation | [Ticket](https://github.com/Archkitten/python_experts/issues/25) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/29) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
 | David Xie | Research Base 2, 8, 16, 64. <br> Message Into Image <br> Implement Image Possibilities | [Ticket](https://github.com/Archkitten/python_experts/issues/28) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/27) |  Journal: 3/3 <br> Individual: -/1<br> Team: -/2 |
@@ -78,13 +85,13 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 **Theme: Every Scrum Team needs to integrate "RGB Values with an Image" to their project.**
 
 > Requirements
-- [ ] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
+- [x] **Arch + Aidan** RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in code.
 
 - [x] **Tyler + William + David** RGB Values with an Image, Backend... how would you write a message into image (Links to an external site.) and transport it to the Web?  Look at Pillow Image write in Tester.
 
-- [ ] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
+- [x] **Arch + Aidan** RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating images (Links to an external site.).
 
-- [ ] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
+- [x] **Arch + Aidan** RGB Values with an Image, Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.
 
 - [x] **William + David + Tyler** Research/Study sheet/journal.  what is base2, base8, base16.  what is base64?   How is base64 different? what are some ideas from this research that you can use in your PBL project?  Add backlog items.
 
