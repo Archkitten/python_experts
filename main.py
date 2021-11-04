@@ -331,6 +331,7 @@ def terminal():
     global greenThreeOpen
     global redPasswordsDisabled
     global blueHiddenEnabled
+    global yellowThreeOpen
 
     # submit button has been pushed
     if request.form:
@@ -1222,11 +1223,196 @@ def terminal():
                                    currentTerminal="T:/Blue/B5>", color="blue",
                                    commandOutput1="Error")
 
+        # ----- TERMINAL Y5 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 14:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="...")
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Y4: [--Open--|-Secure-|--------]")
+            # CONNECT
+            elif commandInputPY == "connect Y4":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect Y4 ����":
+                currentTerminalPY = 15
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                       commandOutput1="Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Y4 password is ����")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Hidden files not enabled on this system")
+            # RUN
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                   commandOutput1=commandInputPY)
+
+        # ----- TERMINAL Y4 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 15:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                       commandOutput1="...")
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
+                                       commandOutput1="Y3: [-Closed-|--------|--------]")
+            # CONNECT
+            elif commandInputPY == "connect Y3":
+                if yellowThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                           commandOutput1="Request Timeout")
+                else:
+                    currentTerminalPY = 16
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                           commandOutput1="Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y4>", color="yellow")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                       commandOutput1="Hidden files not enabled on this system")
+            # RUN
+            # POWER ON
+            elif commandInputPY == "power on Y3" and yellowThreeOpen == 0:
+                yellowThreeOpen = 1
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                       commandOutput1="Y3 state changed from down to up")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                   commandOutput1=commandInputPY)
+
+        # ----- TERMINAL Y3 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 16:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                       commandOutput1="...")
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                       commandOutput1="Y2: [--Open--|--------|-Online-]")
+            # CONNECT
+            elif commandInputPY == "connect Y2":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                       commandOutput1="Port Already In Use")
+            elif commandInputPY == "connect Y2 force":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                       commandOutput1="Simultaneous Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y3>", color="yellow")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                       commandOutput1="Hidden files not enabled on this system")
+            # RUN
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Yellow/Y3>", color="yellow",
+                                   commandOutput1=commandInputPY)
+
+        # ----- TERMINAL Y2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 16:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                       commandOutput1="...")
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                       commandOutput1="G1: [--Open--|-Secure-|--------]")
+            # CONNECT
+            elif commandInputPY == "connect G1":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                       commandOutput1="Unauthorized Access")
+            elif commandInputPY == "connect G1 qwerty":
+                currentTerminalPY = 17
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Green/G1>", color="yellow",
+                                       commandOutput1="Connection Successful")
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                       commandOutput1="Hidden files not enabled on this system")
+            # RUN
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="T:/Yellow/Y2>", color="yellow",
+                                   commandOutput1=commandInputPY)
+
+        # ----- TERMINAL Y1 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+        if currentTerminalPY == 17:
+            # ECHO
+            if commandInputPY == "echo":
+                return render_template("terminal.html",
+                                       currentTerminal="...>", color="yellow",
+                                       commandOutput1="...")
+            # VIEWPORT
+            elif commandInputPY == "viewport":
+                return render_template("terminal.html",
+                                       currentTerminal="...>", color="yellow",
+                                       commandOutput1="...")
+            # CONNECT
+            # SCAN
+            elif commandInputPY == "scan":
+                return render_template("terminal.html",
+                                       currentTerminal="...>", color="yellow",
+                                       commandOutput1="...")
+            elif commandInputPY == "scan hidden":
+                return render_template("terminal.html",
+                                       currentTerminal="...>", color="yellow",
+                                       commandOutput1="...?")
+            # RUN
+            elif commandInputPY == "run ...?":
+                return render_template("/terminal/dotdotdot.html")
+            # SHUTDOWN
+            elif commandInputPY == "shutdown":
+                return render_template("/terminal/end.html")
+            # UNKNOWN
+            return render_template("terminal.html",
+                                   currentTerminal="...>", color="yellow",
+                                   commandOutput1="...")
+
     # --------- STARTUP ---------
     currentTerminalPY = 1
     greenThreeOpen = 0
     redPasswordsDisabled = 0
     blueHiddenEnabled = 0
+    yellowThreeOpen = 0
     return render_template("terminal.html",
                            currentTerminal="T:/Green/G1>", color="lime",
                            commandOutput1="Awaiting Input...")
