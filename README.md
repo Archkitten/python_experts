@@ -18,7 +18,7 @@
 ### Ideation
 
 Purpose:
-Playground / Interface for gaming: similar to cool math games or frivv. We wanted the user to enjoy playing our website while syhharing their experiences with their friends. We created this idea based off the nastolgia of our childood computer labs days ex: fire boy and water girl.
+Playground / Interface for gaming: similar to cool math games or frivv. We wanted the user to enjoy playing our website while sharing their experiences with their friends. We created this idea based off the nostalgia of our childood computer labs days ex: fire boy and water girl.
 
 How to run: 
 Becuase this is not our most recent version we would need a hotspot to remote connect to the raspberry pi in order to update it using this IP: **76.88.115.31:5000** . Currently, If you downloaded our repository, you would be able to run our website through an IDE such as IntellJ.
