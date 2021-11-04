@@ -323,6 +323,7 @@ def gamesapiquiz():
 
 
 
+
 # ------------------------------------ Terminal ------------------------------------
 
 @app.route('/games/terminal/', methods=['GET', 'POST'])
@@ -1269,9 +1270,14 @@ def terminal():
                                        commandOutput1="...")
             # VIEWPORT
             elif commandInputPY == "viewport":
-                return render_template("terminal.html",
-                                       currentTerminal="T:/Yellow/Y5>", color="yellow",
-                                       commandOutput1="Y3: [-Closed-|--------|--------]")
+                if yellowThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                           commandOutput1="Y3: [-Closed-|--------|--------]")
+                else:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                           commandOutput1="Y3: [--Open--|--------|--------]")
             # CONNECT
             elif commandInputPY == "connect Y3":
                 if yellowThreeOpen == 0:
@@ -1321,6 +1327,7 @@ def terminal():
                                        currentTerminal="T:/Yellow/Y3>", color="yellow",
                                        commandOutput1="Port Already In Use")
             elif commandInputPY == "connect Y2 force":
+                currentTerminalPY = 17
                 return render_template("terminal.html",
                                        currentTerminal="T:/Yellow/Y2>", color="yellow",
                                        commandOutput1="Simultaneous Connection Successful")
@@ -1339,7 +1346,7 @@ def terminal():
                                    commandOutput1=commandInputPY)
 
         # ----- TERMINAL Y2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-        if currentTerminalPY == 16:
+        if currentTerminalPY == 17:
             # ECHO
             if commandInputPY == "echo":
                 return render_template("terminal.html",
@@ -1356,10 +1363,10 @@ def terminal():
                                        currentTerminal="T:/Yellow/Y2>", color="yellow",
                                        commandOutput1="Unauthorized Access")
             elif commandInputPY == "connect G1 qwerty":
-                currentTerminalPY = 17
+                currentTerminalPY = 18
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G1>", color="yellow",
-                                       commandOutput1="Connection Successful")
+                                       currentTerminal="...>", color="yellow",
+                                       commandOutput1="...")
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
@@ -1375,7 +1382,7 @@ def terminal():
                                    commandOutput1=commandInputPY)
 
         # ----- TERMINAL Y1 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-        if currentTerminalPY == 17:
+        if currentTerminalPY == 18:
             # ECHO
             if commandInputPY == "echo":
                 return render_template("terminal.html",
