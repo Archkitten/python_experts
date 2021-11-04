@@ -33,6 +33,7 @@ Website prototype: [Ideas](https://docs.google.com/presentation/d/1eqZ7LM41xWljf
 
 Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
+
 ---
 
 ## Individual Final Videos
@@ -55,6 +56,7 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | David Xie | PBL Tasks <br> TT7 (Extra credit) <br>  3.7, 3.8 Notes  |  [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 4.5/5<br>0.25/0.25<br>3/3|
 | Aidan Wu |PBL Tasks <br> TT7 (Extra credit) <br> 3.7, 3.8 Notes | [Ticket](https://github.com/Archkitten/python_experts/issues/40) <br> [Ticket](https://github.com/Archkitten/python_experts/issues/42) <br> Ticket | 5/5<br>0.25/0.25<br>3/3|
 
+---
 
 ## Week 7 (Sprint 7,8 Week 7): Due 10/8
 | Name | Requirement | Evidence | Grade |
