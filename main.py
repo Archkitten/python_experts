@@ -1115,7 +1115,7 @@ def terminal():
             elif commandInputPY == "run s_l__.exe":
                 currentTerminalPY = 3
                 return render_template("terminal.html",
-                                       currentTerminal="T:/Green/G3>", color="green",
+                                       currentTerminal="T:/Green/G3>", color="lime",
                                        commandOutput1="Connection Successful")
             # UNKNOWN
             return render_template("terminal.html",
