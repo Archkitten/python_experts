@@ -609,14 +609,14 @@ def terminal():
             elif commandInputPY == "viewport":
                 if greenThreeOpen == 0:
                     return render_template("terminal.html",
-                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           currentTerminal="T:/Green/G4>", color="lime",
                                            commandOutput1="G1: [--Open--|-Secure-|--------]",
                                            commandOutput2="G2: [--Open--|--------|--------]",
                                            commandOutput3="G3: [-Closed-|-Secure-|--------]",
                                            commandOutput4="G4: [--Open--|-Secure-|-Online-]")
                 else:
                     return render_template("terminal.html",
-                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           currentTerminal="T:/Green/G4>", color="lime",
                                            commandOutput1="G1: [--Open--|-Secure-|--------]",
                                            commandOutput2="G2: [--Open--|--------|--------]",
                                            commandOutput3="G3: [--Open--|-Secure-|--------]",
