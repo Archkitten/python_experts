@@ -427,7 +427,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G1>", color="lime",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Q2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         elif currentTerminalPY == 2:
@@ -530,7 +530,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G2>", color="lime",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Q3 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 3:
@@ -596,7 +596,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G3>", color="lime",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Q4 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 4:
@@ -691,7 +691,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Green/G4>", color="lime",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL R1 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 5:
@@ -753,7 +753,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R1>", color="red",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL R2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 6:
@@ -805,7 +805,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R2>", color="red",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL R3 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 7:
@@ -861,7 +861,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R3>", color="red",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL R4 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 8:
@@ -972,7 +972,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Red/R4>", color="red",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL B1 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 9:
@@ -1018,7 +1018,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Blue/B1>", color="blue",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL B2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 10:
@@ -1070,7 +1070,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Blue/B2>", color="blue",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL B3 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 11:
@@ -1120,7 +1120,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Blue/B3>", color="blue",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL B4 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 12:
@@ -1169,7 +1169,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Blue/B4>", color="blue",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL B5 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 13:
@@ -1222,7 +1222,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Blue/B5>", color="blue",
-                                   commandOutput1="Error")
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Y5 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 14:
@@ -1259,7 +1259,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Yellow/Y5>", color="yellow",
-                                   commandOutput1=commandInputPY)
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Y4 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 15:
@@ -1307,7 +1307,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Yellow/Y4>", color="yellow",
-                                   commandOutput1=commandInputPY)
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Y3 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 16:
@@ -1343,7 +1343,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Yellow/Y3>", color="yellow",
-                                   commandOutput1=commandInputPY)
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Y2 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 17:
@@ -1379,7 +1379,7 @@ def terminal():
             # UNKNOWN
             return render_template("terminal.html",
                                    currentTerminal="T:/Yellow/Y2>", color="yellow",
-                                   commandOutput1=commandInputPY)
+                                   commandOutput1="Error: " + commandInputPY)
 
         # ----- TERMINAL Y1 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
         if currentTerminalPY == 18:
