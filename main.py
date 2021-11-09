@@ -390,6 +390,11 @@ def terminal():
                     return render_template("terminal.html",
                                            currentTerminal="T:/Green/G3>", color="lime",
                                            commandOutput1="Connection Successful")
+            elif commandInputPY == "connect G3 force":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G1>", color="lime",
+                                           commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G1>", color="lime",
@@ -485,6 +490,11 @@ def terminal():
                     return render_template("terminal.html",
                                            currentTerminal="T:/Green/G3>", color="lime",
                                            commandOutput1="Connection Successful")
+            elif commandInputPY == "connect G3 force":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G2>", color="lime",
+                                           commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G2>", color="lime",
@@ -655,6 +665,11 @@ def terminal():
                     return render_template("terminal.html",
                                            currentTerminal="T:/Green/G3>", color="lime",
                                            commandOutput1="Connection Successful")
+            elif commandInputPY == "connect G3 force":
+                if greenThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Green/G4>", color="lime",
+                                           commandOutput1="Request Timeout")
             elif commandInputPY == "connect G4" or commandInputPY == "connect G4 Eve4px":
                 return render_template("terminal.html",
                                        currentTerminal="T:/Green/G4>", color="lime",
@@ -1289,6 +1304,11 @@ def terminal():
                     return render_template("terminal.html",
                                            currentTerminal="T:/Yellow/Y3>", color="yellow",
                                            commandOutput1="Connection Successful")
+            elif commandInputPY == "connect Y3 force":
+                if yellowThreeOpen == 0:
+                    return render_template("terminal.html",
+                                           currentTerminal="T:/Yellow/Y4>", color="yellow",
+                                           commandOutput1="Request Timeout")
             # SCAN
             elif commandInputPY == "scan":
                 return render_template("terminal.html",
