@@ -41,7 +41,10 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 | Capture the Moment |
 | --- | 
-|     |
+|     | 
+
+![alt text](https://lh3.googleusercontent.com/fife/AAWUweVlacFlP21jyHE_P_hR-gyi_nYgJhG-AE68INP7b4x50GTLMjp9xn0lvUw7XZkj2ny_K-SSHRul7ZuDYGC6JnhA97554dNNA6c43Jxa-HG9iV3SVm4qcSBhuugTTz1qfSv_OfkGLNdP54LaThHvqnRBN7WSShKaICX3dTnHElsQYxrI55bniIbBg1H755sLs1n_wgQ_L9Fs0qKyX2kf9tDAQOoZSbkpYW-xaENniHdYWCU17QWVPQo4hSt1XRXbU10PV5BfbqpqaxYoUU7uR8I1zB7QesxI3MCTU_7_YmptEMsH0XjWoNB9xtrWB9tj9Yfk93OM5DuKxpSHo5K3hx1gT2p5TbNKiiE8oMpf-BMDrqGPX15a_4__sGLIVRjRIs1sP05pzwU0knYCkp33VNhGF9RJjAC-xWHq_LI5T9hnwCl00wIrPi88qAalB8x1JOHmCo2WR24PZYUou28HzBa7XmdNlIXPEl3MI4BBvte758z72vYdRLndhToIST7Tl6WJp0x2ZhCpIJMVr89uP86GTnqVhbkXMBicJxFE2mjgV7kbUhLeKiy1kj6069rG12hI4pQj53buRPPUQvQPqOgxfQ-VU25gDhYVN5aob9u3yYL0nzsHnTGs_PPgYTTX4hB5du4n31SQKITYyamQLiiOu-TdSw4D-IhO_-SNywOWWAGB1LtOtPw9yyhUnnKN5-LRMAsAEbdLEFe9zLWUJZ6vDdLd8Ds6n60=w674-h402?authuser=0)
+
 
 
 | Reflection | 
