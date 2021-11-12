@@ -49,13 +49,13 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 | --- |
 | Collaboration.  Classic Retrospective questions.  Try to prioritize answers.  How did the term go as far as people, relationships, processes, and tools?
 What went well?
-We collaborated and interacted with each other very well. We were able to brainstorm a good idea for a website project
+We collaborated and interacted with each other very well. We were able to brainstorm a good idea for a website project along with many unique and cool projects.
 What didn't go that well?
-In some cases, someone would accidentally overwrite the code that somebody else put. However, we were able to fix those problems, so it turned out good in the end
+In some cases, someone would accidentally overwrite the code that somebody else put. However, we were able to fix those problems, so it turned out good in the end. We also weren’t able to make anything super complex like we planned at the start
 What did every team member learn?
-We all learned a lot about computer science principles as well as how to apply what we learned to make computer science projects. We also learned about why collaboration is important when it comes to computer science
+We all learned a lot about why collaboration is important when it comes to computer science. We also learned deployment, HTML, and passing values from frontend to backend using MVC model. Additionally, we learned a lot of collegeboard topics like iteration, boolean, conditionals, binary, and more.
 What puzzles every team member?
-There are some concepts that puzzle us, but we hope to learn more about them next trimester. For example, we don’t yet know much about the Javascript functions and syntax that we used in the Binary Math Minilab.    
+There are some concepts that puzzle us, but we hope to learn more about them next trimester. For example, the 2D Board UI. We never managed to make something like that, except for William’s tic tac toe.
 
 
 
