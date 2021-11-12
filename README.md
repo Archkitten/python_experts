@@ -36,6 +36,23 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 ---
 
+### N@tM Presentation and Walk abouts
+| Capture the Moment |  |
+| Reflection         | Collaboration.  Classic Retrospective questions.  Try to prioritize answers.  How did the term go as far as people, relationships, processes, and tools?
+What went well?
+We collaborated and interacted with each other very well. We were able to brainstorm a good idea for a website project
+What didn't go that well?
+In some cases, someone would accidentally overwrite the code that somebody else put. However, we were able to fix those problems, so it turned out good in the end
+What did every team member learn?
+We all learned a lot about computer science principles as well as how to apply what we learned to make computer science projects. We also learned about why collaboration is important when it comes to computer science
+What puzzles every team member?
+There are some concepts that puzzle us, but we hope to learn more about them next trimester. For example, we don’t yet know much about the Javascript functions and syntax that we used in the Binary Math Minilab.
+ |
+
+
+
+---
+
 ## Individual Final Videos
 | Name | Evidence | Grade |
 | ---  | ---      | ---   |
