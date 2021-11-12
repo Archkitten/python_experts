@@ -41,8 +41,8 @@ Website progress: run code then go to [here](http://127.0.0.1:5000/)
 
 | Capture the Moment |
 | --- | 
-|  [Google Doc](https://docs.google.com/document/d/1j-xBBwg5N9knwoaqZ-uuvSoNP_Z2f3gY9iv75LXqvv8/edit)   | 
-
+|  [Google Doc](https://docs.google.com/document/d/1j-xBBwg5N9knwoaqZ-uuvSoNP_Z2f3gY9iv75LXqvv8/edit)   |
+| [Video](https://drive.google.com/file/d/1Sbzz44-A4Jq6diTcEKq9WN3hjE8ha5zC/view?usp=sharing) |
 
 
 | Reflection | 
@@ -57,6 +57,14 @@ We all learned a lot about why collaboration is important when it comes to compu
 What puzzles every team member?
 There are some concepts that puzzle us, but we hope to learn more about them next trimester. For example, the 2D Board UI. We never managed to make something like that, except for William’s tic tac toe.
 
+## Individual Reflection
+| Name | Reflection | Grade |
+| ---  | ---      | ---   |
+| Tyler Hickman | [Journal](https://docs.google.com/document/d/16REOeNdQyMpNcXKogG1cPO-0g3SXWmy3h4jISrxdx4s/editusp=sharing) | - |
+| William Wu | [Journal](https://docs.google.com/document/d/1dB3nRMvoKc-11rIvAo-7lykMnfGde53yRo2XQuAwGAo/editusp=sharing) | - |
+| Arch Huang | [Journal](https://docs.google.com/document/d/1QuDrQhJw3bN03GOHe0MxFisd8DuYWePGO4MYqzZIAX8/editusp=sharing) | - |
+| David Xie | [Journal](https://docs.google.com/document/d/1xF3iJHqvY4en-WKrrX2Q1lQ-GtWT6P78igyFHzD5F1g/edit?usp=sharing) | - |
+| Aidan Wu | [Journal](https://docs.google.com/document/d/1Hfj5lmAUTpCRWe_yNsZ8gwa4-_xsiJCL2-EJhQjU4ec/edit?usp=sharing) | - |
 
 
 ---
